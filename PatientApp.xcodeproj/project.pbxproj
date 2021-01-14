@@ -68,8 +68,6 @@
 		2F2E1B813FE26E786AADE392 /* Pods_PatientApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4068FD23A5AE634EB8F4E6CD /* Pods_PatientApp.framework */; };
 		C956547125AEEF9B00C03F31 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956547025AEEF9B00C03F31 /* NSObjectExtension.swift */; };
 		C97DF1C225AAD0E2006CC96B /* SwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */; };
-		C97DF1C425AAE04A006CC96B /* MySwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97DF1C325AAE04A006CC96B /* MySwiftView.swift */; };
-		C9860BC625A99AF500053599 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9860BC525A99AF500053599 /* TestSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,9 +210,7 @@
 		72827734898B093F38D5C13C /* Pods-PatientApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientApp.release.xcconfig"; path = "Target Support Files/Pods-PatientApp/Pods-PatientApp.release.xcconfig"; sourceTree = "<group>"; };
 		C956547025AEEF9B00C03F31 /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftVC.swift; sourceTree = "<group>"; };
-		C97DF1C325AAE04A006CC96B /* MySwiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftView.swift; sourceTree = "<group>"; };
 		C9860BC425A99AF500053599 /* PatientApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PatientApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		C9860BC525A99AF500053599 /* TestSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -591,10 +587,8 @@
 				04D833DA253162EF00FCD4D5 /* LaunchScreen.storyboard */,
 				04D833DD253162EF00FCD4D5 /* Info.plist */,
 				04D833DE253162EF00FCD4D5 /* main.m */,
-				C9860BC525A99AF500053599 /* TestSwift.swift */,
 				C9860BC425A99AF500053599 /* PatientApp-Bridging-Header.h */,
 				C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */,
-				C97DF1C325AAE04A006CC96B /* MySwiftView.swift */,
 			);
 			path = PatientApp;
 			sourceTree = "<group>";
@@ -867,7 +861,6 @@
 				044C5F05253577350058FC6A /* PLMyPageRootView.m in Sources */,
 				044DC8A8253E80BA00EA1A35 /* PLAmendPassWordRootView.m in Sources */,
 				042B8391253442620069A40A /* PLTabbarController.m in Sources */,
-				C9860BC625A99AF500053599 /* TestSwift.swift in Sources */,
 				0467B0D8253555B70004ABBB /* PLLoginViewModel.m in Sources */,
 				04544A492536CB38007F739F /* JSBasicViewController.m in Sources */,
 				042B83BF2534474F0069A40A /* PLMainPageViewController.m in Sources */,
@@ -903,7 +896,6 @@
 				04544A4F2536CBBD007F739F /* JSHeaderView.m in Sources */,
 				045A14BA253825A800504F25 /* PLRegisterViewController.m in Sources */,
 				04D833CE253162E200FCD4D5 /* AppDelegate.m in Sources */,
-				C97DF1C425AAE04A006CC96B /* MySwiftView.swift in Sources */,
 				0467B0C2253544DF0004ABBB /* NSString+JSString.m in Sources */,
 				04544A402536A39C007F739F /* PLCommonCornerButtonView.m in Sources */,
 				042B83B9253447200069A40A /* PLServiceViewController.m in Sources */,
