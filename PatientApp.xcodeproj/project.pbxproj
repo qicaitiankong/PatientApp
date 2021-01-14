@@ -71,6 +71,8 @@
 		C936E41F25AFD94D0086E73B /* ConstantsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936E41E25AFD94D0086E73B /* ConstantsHeader.swift */; };
 		C936E42125AFE4770086E73B /* MiddleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936E42025AFE4770086E73B /* MiddleDetailViewController.swift */; };
 		C936E42725AFED8C0086E73B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936E42625AFED8C0086E73B /* StringExtension.swift */; };
+		C936E42925B03EC20086E73B /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936E42825B03EC20086E73B /* DataModel.swift */; };
+		C936E42B25B0402F0086E73B /* CompleteDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936E42A25B0402F0086E73B /* CompleteDataModel.swift */; };
 		C97DF1C225AAD0E2006CC96B /* SwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -217,6 +219,8 @@
 		C936E41E25AFD94D0086E73B /* ConstantsHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantsHeader.swift; sourceTree = "<group>"; };
 		C936E42025AFE4770086E73B /* MiddleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleDetailViewController.swift; sourceTree = "<group>"; };
 		C936E42625AFED8C0086E73B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		C936E42825B03EC20086E73B /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		C936E42A25B0402F0086E73B /* CompleteDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteDataModel.swift; sourceTree = "<group>"; };
 		C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftVC.swift; sourceTree = "<group>"; };
 		C9860BC425A99AF500053599 /* PatientApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PatientApp-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -680,6 +684,8 @@
 				C936E41A25AFD88F0086E73B /* MiddleListPageDataModel.swift */,
 				C936E41825AFD88F0086E73B /* MiddleListTableViewCell.swift */,
 				C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */,
+				C936E42825B03EC20086E73B /* DataModel.swift */,
+				C936E42A25B0402F0086E73B /* CompleteDataModel.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -871,6 +877,7 @@
 				045AECD62539737200757813 /* NSDictionary+JSTDictionary.m in Sources */,
 				044C5F17253588B00058FC6A /* PLMyPageBaseScrollView.m in Sources */,
 				045A14B42537F8F000504F25 /* PLCanClickLabelWithBottomHorinzontalLine.m in Sources */,
+				C936E42925B03EC20086E73B /* DataModel.swift in Sources */,
 				0467B0C8253546B30004ABBB /* NSData+HSData.m in Sources */,
 				042B838025343B380069A40A /* AppDelegate+PatientUI.m in Sources */,
 				044DC895253E703800EA1A35 /* PLFindPassWordRootView.m in Sources */,
@@ -904,6 +911,7 @@
 				045AECC32539374100757813 /* PLCommonNetworkUrlConstant.m in Sources */,
 				045A14D625385BA100504F25 /* HSHud.m in Sources */,
 				045A14C02538287500504F25 /* PLRegisterRootView.m in Sources */,
+				C936E42B25B0402F0086E73B /* CompleteDataModel.swift in Sources */,
 				044DC89E253E709000EA1A35 /* PLFindPassWordViewModel.m in Sources */,
 				0467B0E1253556A80004ABBB /* PLLoginRootView.m in Sources */,
 				0453F3B5253D6E3300B32F46 /* PLUserInfoConstantKey.m in Sources */,

@@ -132,9 +132,39 @@ class SwiftVC: UIViewController,UITableViewDelegate,UITableViewDataSource
         })
         
     }
+    
+    /// 上拉没数据复位页数并停止刷新
+    func resetPageWhenNoDataForLoad()
+    {
+         if isRefresh == false
+         {
+                self.tableView?.mj_footer?.endRefreshingWithNoMoreData()
+                if self.pageNumber > 1
+                {
+                     self.pageNumber -= 1
+                }
+        }
+    }
+    
+    /// 上拉有数据停止加载
+    func endRerenshWhenHaveDataForLoad()  {
+        if isRefresh == false
+         {
+                self.tableView?.mj_footer?.endRefreshing()
+        }
+    }
+    //下拉刷新页面
+    func refreshTableViewForRefresh()  {
+        if isRefresh == true
+         {
+            self.tableView?.reloadData()
+        }
+    }
+    
     func dealData(data: Data?,err: Error?) ->Void {
         
-        if isRefresh {
+        if isRefresh
+        {
             self.tableView?.mj_footer?.resetNoMoreData()
             self.tableView?.mj_header?.endRefreshing()
         }
@@ -142,66 +172,56 @@ class SwiftVC: UIViewController,UITableViewDelegate,UITableViewDataSource
         {
             print(error.localizedDescription)
             
-            if isRefresh == false
-            {
-                self.tableView?.mj_footer?.endRefreshing()
-            }
+            endRerenshWhenHaveDataForLoad()
         }else
         {
             if isRefresh
             {
                 self.modelArr.removeAll()
             }
-            
+                var totoalPage:Int?
                 if let targetData = data
                 {
-                    if let jsonObj = try? JSON.init(data: targetData){
-                        
-                        let status = jsonObj["status"].intValue
-                        if status == 0
+                    let decoder = JSONDecoder()
+                    if let totalDataModel = try? decoder.decode(CompleteDataModel.self, from: targetData)
+                    {
+                       
+                        if let status = totalDataModel.status
                         {
-                            let listArr = jsonObj["data"]["list"].arrayValue
-                            for dataDict:JSON in listArr
+                            if status == 0
                             {
-                                let model = MiddleListPageDataModel(dict: dataDict)
-                                //testGetRequest(urlStr: model.imageUrlStr!)
-                                self.modelArr.append(model)
-                            }
-                            if listArr.isEmpty{
-                                if isRefresh == false
+                                if let modelArr = totalDataModel.data?.list
                                 {
-                                    self.tableView?.mj_footer?.endRefreshingWithNoMoreData()
-                                    if self.pageNumber > 1{
-                                         self.pageNumber -= 1
+                                    totoalPage = totalDataModel.data?.totalPage
+                                    for model in modelArr
+                                    {
+                                        model.setNeedValue()
+                                        self.modelArr.append(model)
                                     }
-                                   
-                                }else{
-                                    self.tableView?.reloadData()
                                 }
-                            }else
-                            {
-                                if isRefresh == false
-                                           {
-                                               self.tableView?.mj_footer?.endRefreshing()
-                                           }
-                                self.tableView?.reloadData()
                             }
-                            
-                            
-                        }else
-                        {
-                            if isRefresh == false && self.pageNumber > 1
-                            {
-                                self.pageNumber -= 1
-                            }
-                            self.tableView?.reloadData()
                         }
-                        
                     }
                 }
-            
+            if let localTotalPage = totoalPage
+            {
+                if self.pageNumber > localTotalPage
+                {
+                    resetPageWhenNoDataForLoad()
+                }else
+                {
+                     endRerenshWhenHaveDataForLoad()
+                     self.tableView?.reloadData()
+                }
+            }else
+            {
+                resetPageWhenNoDataForLoad()
+                endRerenshWhenHaveDataForLoad()
+            }
+            refreshTableViewForRefresh()
         }
     }
+    
     //实时监测
        func startWebListening() {
            
