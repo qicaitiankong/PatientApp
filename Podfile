@@ -10,5 +10,5 @@ target 'PatientApp' do
 	pod 'SVProgressHUD', '~>2.2.5'
 	pod 'Reachability', '~> 3.2'
 	pod 'Alamofire','~>5.2.0'
-	pod 'SwiftJSONi', '~> 0.1.1'
+	pod 'SwiftyJSON', '~> 5.0.0'
 end

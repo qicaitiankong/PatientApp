@@ -22,7 +22,7 @@ PODS:
     - SDWebImage/Core (= 5.8.0)
   - SDWebImage/Core (5.8.0)
   - SVProgressHUD (2.2.5)
-  - SwiftJSONi (0.1.1)
+  - SwiftyJSON (5.0.0)
   - TYCyclePagerView (1.2.0)
 
 DEPENDENCIES:
@@ -33,7 +33,7 @@ DEPENDENCIES:
   - Reachability (~> 3.2)
   - SDWebImage (~> 5.8.0)
   - SVProgressHUD (~> 2.2.5)
-  - SwiftJSONi (~> 0.1.1)
+  - SwiftyJSON (~> 5.0.0)
   - TYCyclePagerView (~> 1.2.0)
 
 SPEC REPOS:
@@ -45,7 +45,7 @@ SPEC REPOS:
     - Reachability
     - SDWebImage
     - SVProgressHUD
-    - SwiftJSONi
+    - SwiftyJSON
     - TYCyclePagerView
 
 SPEC CHECKSUMS:
@@ -56,9 +56,9 @@ SPEC CHECKSUMS:
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  SwiftJSONi: 8d42ed11ae3f10b922fdbc014c65c45252693944
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   TYCyclePagerView: 2b051dade0615c70784aa34f40c646feeddb7344
 
-PODFILE CHECKSUM: 92e63ee6c04f4ef3e464a41b27efa1c2219bbf31
+PODFILE CHECKSUM: 5c3e0c91e1dfffa59c37f8eeac81e734cb98e0ed
 
 COCOAPODS: 1.9.2

@@ -66,7 +66,11 @@
 		04D833E9253162F000FCD4D5 /* PatientAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D833E8253162F000FCD4D5 /* PatientAppTests.m */; };
 		04D833F4253162F000FCD4D5 /* PatientAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D833F3253162F000FCD4D5 /* PatientAppUITests.m */; };
 		2F2E1B813FE26E786AADE392 /* Pods_PatientApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4068FD23A5AE634EB8F4E6CD /* Pods_PatientApp.framework */; };
-		C956547125AEEF9B00C03F31 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956547025AEEF9B00C03F31 /* NSObjectExtension.swift */; };
+		C936E41B25AFD88F0086E73B /* MiddleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936E41825AFD88F0086E73B /* MiddleListTableViewCell.swift */; };
+		C936E41D25AFD88F0086E73B /* MiddleListPageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936E41A25AFD88F0086E73B /* MiddleListPageDataModel.swift */; };
+		C936E41F25AFD94D0086E73B /* ConstantsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936E41E25AFD94D0086E73B /* ConstantsHeader.swift */; };
+		C936E42125AFE4770086E73B /* MiddleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936E42025AFE4770086E73B /* MiddleDetailViewController.swift */; };
+		C936E42725AFED8C0086E73B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936E42625AFED8C0086E73B /* StringExtension.swift */; };
 		C97DF1C225AAD0E2006CC96B /* SwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -208,7 +212,11 @@
 		1CBD9FF3DE7AD3DEECD4F97E /* Pods-PatientApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientApp.debug.xcconfig"; path = "Target Support Files/Pods-PatientApp/Pods-PatientApp.debug.xcconfig"; sourceTree = "<group>"; };
 		4068FD23A5AE634EB8F4E6CD /* Pods_PatientApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PatientApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72827734898B093F38D5C13C /* Pods-PatientApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientApp.release.xcconfig"; path = "Target Support Files/Pods-PatientApp/Pods-PatientApp.release.xcconfig"; sourceTree = "<group>"; };
-		C956547025AEEF9B00C03F31 /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		C936E41825AFD88F0086E73B /* MiddleListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleListTableViewCell.swift; sourceTree = "<group>"; };
+		C936E41A25AFD88F0086E73B /* MiddleListPageDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleListPageDataModel.swift; sourceTree = "<group>"; };
+		C936E41E25AFD94D0086E73B /* ConstantsHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantsHeader.swift; sourceTree = "<group>"; };
+		C936E42025AFE4770086E73B /* MiddleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleDetailViewController.swift; sourceTree = "<group>"; };
+		C936E42625AFED8C0086E73B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftVC.swift; sourceTree = "<group>"; };
 		C9860BC425A99AF500053599 /* PatientApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PatientApp-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -568,7 +576,7 @@
 		04D833CB253162E200FCD4D5 /* PatientApp */ = {
 			isa = PBXGroup;
 			children = (
-				C956547025AEEF9B00C03F31 /* NSObjectExtension.swift */,
+				C936E41725AFD80B0086E73B /* Swift */,
 				042B838825343D320069A40A /* TabbarController */,
 				042B838725343CEB0069A40A /* BaseVC */,
 				042B837D253439110069A40A /* LoginRegister */,
@@ -588,7 +596,6 @@
 				04D833DD253162EF00FCD4D5 /* Info.plist */,
 				04D833DE253162EF00FCD4D5 /* main.m */,
 				C9860BC425A99AF500053599 /* PatientApp-Bridging-Header.h */,
-				C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */,
 			);
 			path = PatientApp;
 			sourceTree = "<group>";
@@ -662,6 +669,19 @@
 				72827734898B093F38D5C13C /* Pods-PatientApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C936E41725AFD80B0086E73B /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				C936E42625AFED8C0086E73B /* StringExtension.swift */,
+				C936E42025AFE4770086E73B /* MiddleDetailViewController.swift */,
+				C936E41E25AFD94D0086E73B /* ConstantsHeader.swift */,
+				C936E41A25AFD88F0086E73B /* MiddleListPageDataModel.swift */,
+				C936E41825AFD88F0086E73B /* MiddleListTableViewCell.swift */,
+				C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */,
+			);
+			path = Swift;
 			sourceTree = "<group>";
 		};
 		C97CFAC963FEC2DE57510DB1 /* Frameworks */ = {
@@ -860,26 +880,29 @@
 				044C5F0B25357A610058FC6A /* PLMyPageTopPartView.m in Sources */,
 				044C5F05253577350058FC6A /* PLMyPageRootView.m in Sources */,
 				044DC8A8253E80BA00EA1A35 /* PLAmendPassWordRootView.m in Sources */,
+				C936E41B25AFD88F0086E73B /* MiddleListTableViewCell.swift in Sources */,
 				042B8391253442620069A40A /* PLTabbarController.m in Sources */,
 				0467B0D8253555B70004ABBB /* PLLoginViewModel.m in Sources */,
 				04544A492536CB38007F739F /* JSBasicViewController.m in Sources */,
 				042B83BF2534474F0069A40A /* PLMainPageViewController.m in Sources */,
+				C936E41D25AFD88F0086E73B /* MiddleListPageDataModel.swift in Sources */,
 				042B838B25343DCA0069A40A /* UITabBar+JSCCustomTabbar.m in Sources */,
 				0467B0CE253554540004ABBB /* PLLoginViewController.m in Sources */,
 				044DC8B7253E812D00EA1A35 /* PLAmendPassWordViewController.m in Sources */,
 				0467B0ED25355B350004ABBB /* PLCustomLabel.m in Sources */,
 				042B83AD253446E70069A40A /* PLMyPageViewController.m in Sources */,
 				044C5F1125357ABD0058FC6A /* PLMyPageCenterGroupView.m in Sources */,
+				C936E42125AFE4770086E73B /* MiddleDetailViewController.swift in Sources */,
 				C97DF1C225AAD0E2006CC96B /* SwiftVC.swift in Sources */,
 				045AECBD253935F900757813 /* PLLoginAndRegisterNetWork.m in Sources */,
 				04544A3425369138007F739F /* UIView+PLCustom.m in Sources */,
 				0453F3C7253D7EFD00B32F46 /* PLNotificationNameKey.m in Sources */,
 				04544A692536DC8E007F739F /* MyPageMainModel.m in Sources */,
 				045A14A22537E27F00504F25 /* PLBaseTextField.m in Sources */,
+				C936E41F25AFD94D0086E73B /* ConstantsHeader.swift in Sources */,
 				042B8397253443510069A40A /* UIColor+JSColor.m in Sources */,
 				045AECC32539374100757813 /* PLCommonNetworkUrlConstant.m in Sources */,
 				045A14D625385BA100504F25 /* HSHud.m in Sources */,
-				C956547125AEEF9B00C03F31 /* NSObjectExtension.swift in Sources */,
 				045A14C02538287500504F25 /* PLRegisterRootView.m in Sources */,
 				044DC89E253E709000EA1A35 /* PLFindPassWordViewModel.m in Sources */,
 				0467B0E1253556A80004ABBB /* PLLoginRootView.m in Sources */,
@@ -901,6 +924,7 @@
 				042B83B9253447200069A40A /* PLServiceViewController.m in Sources */,
 				04544A6F2536FC5B007F739F /* UIFont+JSFont.m in Sources */,
 				04D833DF253162EF00FCD4D5 /* main.m in Sources */,
+				C936E42725AFED8C0086E73B /* StringExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
