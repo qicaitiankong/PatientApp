@@ -1,0 +1,1299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0421044025359876008AC002 /* PLMyPageSingleSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0421043F25359876008AC002 /* PLMyPageSingleSelectionView.m */; };
+		042B838025343B380069A40A /* AppDelegate+PatientUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B837F25343B380069A40A /* AppDelegate+PatientUI.m */; };
+		042B838B25343DCA0069A40A /* UITabBar+JSCCustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B838A25343DC90069A40A /* UITabBar+JSCCustomTabbar.m */; };
+		042B8391253442620069A40A /* PLTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B8390253442620069A40A /* PLTabbarController.m */; };
+		042B8397253443510069A40A /* UIColor+JSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B8396253443510069A40A /* UIColor+JSColor.m */; };
+		042B83AD253446E70069A40A /* PLMyPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B83AC253446E70069A40A /* PLMyPageViewController.m */; };
+		042B83B3253447020069A40A /* PLMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B83B2253447020069A40A /* PLMessageViewController.m */; };
+		042B83B9253447200069A40A /* PLServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B83B8253447200069A40A /* PLServiceViewController.m */; };
+		042B83BF2534474F0069A40A /* PLMainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B83BE2534474F0069A40A /* PLMainPageViewController.m */; };
+		042B83D4253451F80069A40A /* PLNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 042B83D2253451F80069A40A /* PLNetWorkManager.m */; };
+		044C5F05253577350058FC6A /* PLMyPageRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C5F04253577350058FC6A /* PLMyPageRootView.m */; };
+		044C5F0B25357A610058FC6A /* PLMyPageTopPartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C5F0A25357A610058FC6A /* PLMyPageTopPartView.m */; };
+		044C5F1125357ABD0058FC6A /* PLMyPageCenterGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C5F1025357ABD0058FC6A /* PLMyPageCenterGroupView.m */; };
+		044C5F17253588B00058FC6A /* PLMyPageBaseScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C5F16253588B00058FC6A /* PLMyPageBaseScrollView.m */; };
+		044DC88E253E6C4600EA1A35 /* PLFindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DC88D253E6C4600EA1A35 /* PLFindPasswordViewController.m */; };
+		044DC895253E703800EA1A35 /* PLFindPassWordRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DC894253E703800EA1A35 /* PLFindPassWordRootView.m */; };
+		044DC89E253E709000EA1A35 /* PLFindPassWordViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DC89D253E709000EA1A35 /* PLFindPassWordViewModel.m */; };
+		044DC8A8253E80BA00EA1A35 /* PLAmendPassWordRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DC8A7253E80BA00EA1A35 /* PLAmendPassWordRootView.m */; };
+		044DC8B1253E80F100EA1A35 /* PLAmendPassWordViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DC8B0253E80F100EA1A35 /* PLAmendPassWordViewModel.m */; };
+		044DC8B7253E812D00EA1A35 /* PLAmendPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DC8B6253E812D00EA1A35 /* PLAmendPassWordViewController.m */; };
+		0453F3B5253D6E3300B32F46 /* PLUserInfoConstantKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453F3B4253D6E3300B32F46 /* PLUserInfoConstantKey.m */; };
+		0453F3C1253D78C400B32F46 /* PLMyPageNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453F3C0253D78C400B32F46 /* PLMyPageNetWork.m */; };
+		0453F3C7253D7EFD00B32F46 /* PLNotificationNameKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453F3C6253D7EFD00B32F46 /* PLNotificationNameKey.m */; };
+		04544A3425369138007F739F /* UIView+PLCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 04544A3325369138007F739F /* UIView+PLCustom.m */; };
+		04544A3A25369D12007F739F /* PLRoundedBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04544A3925369D12007F739F /* PLRoundedBoardView.m */; };
+		04544A402536A39C007F739F /* PLCommonCornerButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04544A3F2536A39C007F739F /* PLCommonCornerButtonView.m */; };
+		04544A492536CB38007F739F /* JSBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04544A472536CB38007F739F /* JSBasicViewController.m */; };
+		04544A4F2536CBBD007F739F /* JSHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04544A4D2536CBBD007F739F /* JSHeaderView.m */; };
+		04544A602536DC69007F739F /* MyPageMainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04544A5F2536DC69007F739F /* MyPageMainViewModel.m */; };
+		04544A692536DC8E007F739F /* MyPageMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04544A682536DC8E007F739F /* MyPageMainModel.m */; };
+		04544A6F2536FC5B007F739F /* UIFont+JSFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 04544A6E2536FC5B007F739F /* UIFont+JSFont.m */; };
+		045A14A22537E27F00504F25 /* PLBaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 045A14A12537E27F00504F25 /* PLBaseTextField.m */; };
+		045A14A82537E66100504F25 /* PLLoginInputIdentityNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 045A14A72537E66100504F25 /* PLLoginInputIdentityNumberTextField.m */; };
+		045A14AE2537F05E00504F25 /* PLLoginInputPasswordTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045A14AD2537F05E00504F25 /* PLLoginInputPasswordTextFieldView.m */; };
+		045A14B42537F8F000504F25 /* PLCanClickLabelWithBottomHorinzontalLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 045A14B32537F8F000504F25 /* PLCanClickLabelWithBottomHorinzontalLine.m */; };
+		045A14BA253825A800504F25 /* PLRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045A14B9253825A800504F25 /* PLRegisterViewController.m */; };
+		045A14C02538287500504F25 /* PLRegisterRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045A14BF2538287500504F25 /* PLRegisterRootView.m */; };
+		045A14C62538452100504F25 /* PLRegisterInputCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045A14C52538452100504F25 /* PLRegisterInputCodeView.m */; };
+		045A14D625385BA100504F25 /* HSHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 045A14D425385BA000504F25 /* HSHud.m */; };
+		045AECBD253935F900757813 /* PLLoginAndRegisterNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AECBC253935F900757813 /* PLLoginAndRegisterNetWork.m */; };
+		045AECC32539374100757813 /* PLCommonNetworkUrlConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AECC22539374100757813 /* PLCommonNetworkUrlConstant.m */; };
+		045AECD62539737200757813 /* NSDictionary+JSTDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AECD42539737200757813 /* NSDictionary+JSTDictionary.m */; };
+		045AECDC253973B400757813 /* NSNumber+JSTNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AECDB253973B400757813 /* NSNumber+JSTNumber.m */; };
+		0467B0BC253543780004ABBB /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467B0BA253543780004ABBB /* UIViewExt.m */; };
+		0467B0C2253544DF0004ABBB /* NSString+JSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467B0C1253544DF0004ABBB /* NSString+JSString.m */; };
+		0467B0C8253546B30004ABBB /* NSData+HSData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467B0C6253546B30004ABBB /* NSData+HSData.m */; };
+		0467B0CE253554540004ABBB /* PLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467B0CD253554540004ABBB /* PLLoginViewController.m */; };
+		0467B0D8253555B70004ABBB /* PLLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467B0D7253555B70004ABBB /* PLLoginViewModel.m */; };
+		0467B0E1253556A80004ABBB /* PLLoginRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467B0E0253556A80004ABBB /* PLLoginRootView.m */; };
+		0467B0ED25355B350004ABBB /* PLCustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467B0EC25355B350004ABBB /* PLCustomLabel.m */; };
+		04D833CE253162E200FCD4D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D833CD253162E200FCD4D5 /* AppDelegate.m */; };
+		04D833D4253162E200FCD4D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D833D3253162E200FCD4D5 /* ViewController.m */; };
+		04D833D7253162E200FCD4D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D833D5253162E200FCD4D5 /* Main.storyboard */; };
+		04D833D9253162EF00FCD4D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D833D8253162EF00FCD4D5 /* Assets.xcassets */; };
+		04D833DC253162EF00FCD4D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D833DA253162EF00FCD4D5 /* LaunchScreen.storyboard */; };
+		04D833DF253162EF00FCD4D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D833DE253162EF00FCD4D5 /* main.m */; };
+		04D833E9253162F000FCD4D5 /* PatientAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D833E8253162F000FCD4D5 /* PatientAppTests.m */; };
+		04D833F4253162F000FCD4D5 /* PatientAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D833F3253162F000FCD4D5 /* PatientAppUITests.m */; };
+		2F2E1B813FE26E786AADE392 /* Pods_PatientApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4068FD23A5AE634EB8F4E6CD /* Pods_PatientApp.framework */; };
+		C956547125AEEF9B00C03F31 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956547025AEEF9B00C03F31 /* NSObjectExtension.swift */; };
+		C97DF1C225AAD0E2006CC96B /* SwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */; };
+		C97DF1C425AAE04A006CC96B /* MySwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97DF1C325AAE04A006CC96B /* MySwiftView.swift */; };
+		C9860BC625A99AF500053599 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9860BC525A99AF500053599 /* TestSwift.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04D833E5253162F000FCD4D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04D833C1253162E200FCD4D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04D833C8253162E200FCD4D5;
+			remoteInfo = PatientApp;
+		};
+		04D833F0253162F000FCD4D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04D833C1253162E200FCD4D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04D833C8253162E200FCD4D5;
+			remoteInfo = PatientApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0421043E25359876008AC002 /* PLMyPageSingleSelectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLMyPageSingleSelectionView.h; sourceTree = "<group>"; };
+		0421043F25359876008AC002 /* PLMyPageSingleSelectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLMyPageSingleSelectionView.m; sourceTree = "<group>"; };
+		042B837E25343B380069A40A /* AppDelegate+PatientUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+PatientUI.h"; sourceTree = "<group>"; };
+		042B837F25343B380069A40A /* AppDelegate+PatientUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+PatientUI.m"; sourceTree = "<group>"; };
+		042B838925343DC90069A40A /* UITabBar+JSCCustomTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+JSCCustomTabbar.h"; sourceTree = "<group>"; };
+		042B838A25343DC90069A40A /* UITabBar+JSCCustomTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+JSCCustomTabbar.m"; sourceTree = "<group>"; };
+		042B838F253442620069A40A /* PLTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLTabbarController.h; sourceTree = "<group>"; };
+		042B8390253442620069A40A /* PLTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLTabbarController.m; sourceTree = "<group>"; };
+		042B8395253443510069A40A /* UIColor+JSColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JSColor.h"; sourceTree = "<group>"; };
+		042B8396253443510069A40A /* UIColor+JSColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JSColor.m"; sourceTree = "<group>"; };
+		042B83AB253446E70069A40A /* PLMyPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLMyPageViewController.h; sourceTree = "<group>"; };
+		042B83AC253446E70069A40A /* PLMyPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLMyPageViewController.m; sourceTree = "<group>"; };
+		042B83B1253447020069A40A /* PLMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLMessageViewController.h; sourceTree = "<group>"; };
+		042B83B2253447020069A40A /* PLMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLMessageViewController.m; sourceTree = "<group>"; };
+		042B83B7253447200069A40A /* PLServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLServiceViewController.h; sourceTree = "<group>"; };
+		042B83B8253447200069A40A /* PLServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLServiceViewController.m; sourceTree = "<group>"; };
+		042B83BD2534474F0069A40A /* PLMainPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLMainPageViewController.h; sourceTree = "<group>"; };
+		042B83BE2534474F0069A40A /* PLMainPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLMainPageViewController.m; sourceTree = "<group>"; };
+		042B83D2253451F80069A40A /* PLNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLNetWorkManager.m; sourceTree = "<group>"; };
+		042B83D3253451F80069A40A /* PLNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLNetWorkManager.h; sourceTree = "<group>"; };
+		042E2F5A2534280A0001A5F5 /* PatientPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatientPrefixHeader.pch; sourceTree = "<group>"; };
+		044C5F03253577350058FC6A /* PLMyPageRootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLMyPageRootView.h; sourceTree = "<group>"; };
+		044C5F04253577350058FC6A /* PLMyPageRootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLMyPageRootView.m; sourceTree = "<group>"; };
+		044C5F0925357A610058FC6A /* PLMyPageTopPartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLMyPageTopPartView.h; sourceTree = "<group>"; };
+		044C5F0A25357A610058FC6A /* PLMyPageTopPartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLMyPageTopPartView.m; sourceTree = "<group>"; };
+		044C5F0F25357ABD0058FC6A /* PLMyPageCenterGroupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLMyPageCenterGroupView.h; sourceTree = "<group>"; };
+		044C5F1025357ABD0058FC6A /* PLMyPageCenterGroupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLMyPageCenterGroupView.m; sourceTree = "<group>"; };
+		044C5F15253588B00058FC6A /* PLMyPageBaseScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLMyPageBaseScrollView.h; sourceTree = "<group>"; };
+		044C5F16253588B00058FC6A /* PLMyPageBaseScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLMyPageBaseScrollView.m; sourceTree = "<group>"; };
+		044DC88C253E6C4600EA1A35 /* PLFindPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLFindPasswordViewController.h; sourceTree = "<group>"; };
+		044DC88D253E6C4600EA1A35 /* PLFindPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLFindPasswordViewController.m; sourceTree = "<group>"; };
+		044DC893253E703800EA1A35 /* PLFindPassWordRootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLFindPassWordRootView.h; sourceTree = "<group>"; };
+		044DC894253E703800EA1A35 /* PLFindPassWordRootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLFindPassWordRootView.m; sourceTree = "<group>"; };
+		044DC89C253E709000EA1A35 /* PLFindPassWordViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLFindPassWordViewModel.h; sourceTree = "<group>"; };
+		044DC89D253E709000EA1A35 /* PLFindPassWordViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLFindPassWordViewModel.m; sourceTree = "<group>"; };
+		044DC8A6253E80BA00EA1A35 /* PLAmendPassWordRootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLAmendPassWordRootView.h; sourceTree = "<group>"; };
+		044DC8A7253E80BA00EA1A35 /* PLAmendPassWordRootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAmendPassWordRootView.m; sourceTree = "<group>"; };
+		044DC8AF253E80F100EA1A35 /* PLAmendPassWordViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLAmendPassWordViewModel.h; sourceTree = "<group>"; };
+		044DC8B0253E80F100EA1A35 /* PLAmendPassWordViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAmendPassWordViewModel.m; sourceTree = "<group>"; };
+		044DC8B5253E812D00EA1A35 /* PLAmendPassWordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLAmendPassWordViewController.h; sourceTree = "<group>"; };
+		044DC8B6253E812D00EA1A35 /* PLAmendPassWordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAmendPassWordViewController.m; sourceTree = "<group>"; };
+		0453F3B3253D6E3300B32F46 /* PLUserInfoConstantKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLUserInfoConstantKey.h; sourceTree = "<group>"; };
+		0453F3B4253D6E3300B32F46 /* PLUserInfoConstantKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLUserInfoConstantKey.m; sourceTree = "<group>"; };
+		0453F3BF253D78C400B32F46 /* PLMyPageNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLMyPageNetWork.h; sourceTree = "<group>"; };
+		0453F3C0253D78C400B32F46 /* PLMyPageNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLMyPageNetWork.m; sourceTree = "<group>"; };
+		0453F3C5253D7EFD00B32F46 /* PLNotificationNameKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLNotificationNameKey.h; sourceTree = "<group>"; };
+		0453F3C6253D7EFD00B32F46 /* PLNotificationNameKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLNotificationNameKey.m; sourceTree = "<group>"; };
+		04544A3225369138007F739F /* UIView+PLCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+PLCustom.h"; sourceTree = "<group>"; };
+		04544A3325369138007F739F /* UIView+PLCustom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+PLCustom.m"; sourceTree = "<group>"; };
+		04544A3825369D12007F739F /* PLRoundedBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLRoundedBoardView.h; sourceTree = "<group>"; };
+		04544A3925369D12007F739F /* PLRoundedBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLRoundedBoardView.m; sourceTree = "<group>"; };
+		04544A3E2536A39C007F739F /* PLCommonCornerButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLCommonCornerButtonView.h; sourceTree = "<group>"; };
+		04544A3F2536A39C007F739F /* PLCommonCornerButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCommonCornerButtonView.m; sourceTree = "<group>"; };
+		04544A472536CB38007F739F /* JSBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBasicViewController.m; sourceTree = "<group>"; };
+		04544A482536CB38007F739F /* JSBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBasicViewController.h; sourceTree = "<group>"; };
+		04544A4D2536CBBD007F739F /* JSHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHeaderView.m; sourceTree = "<group>"; };
+		04544A4E2536CBBD007F739F /* JSHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHeaderView.h; sourceTree = "<group>"; };
+		04544A5E2536DC69007F739F /* MyPageMainViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPageMainViewModel.h; sourceTree = "<group>"; };
+		04544A5F2536DC69007F739F /* MyPageMainViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPageMainViewModel.m; sourceTree = "<group>"; };
+		04544A672536DC8E007F739F /* MyPageMainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPageMainModel.h; sourceTree = "<group>"; };
+		04544A682536DC8E007F739F /* MyPageMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPageMainModel.m; sourceTree = "<group>"; };
+		04544A6D2536FC5B007F739F /* UIFont+JSFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+JSFont.h"; sourceTree = "<group>"; };
+		04544A6E2536FC5B007F739F /* UIFont+JSFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+JSFont.m"; sourceTree = "<group>"; };
+		045A14A02537E27F00504F25 /* PLBaseTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLBaseTextField.h; sourceTree = "<group>"; };
+		045A14A12537E27F00504F25 /* PLBaseTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLBaseTextField.m; sourceTree = "<group>"; };
+		045A14A62537E66100504F25 /* PLLoginInputIdentityNumberTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLLoginInputIdentityNumberTextField.h; sourceTree = "<group>"; };
+		045A14A72537E66100504F25 /* PLLoginInputIdentityNumberTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLLoginInputIdentityNumberTextField.m; sourceTree = "<group>"; };
+		045A14AC2537F05E00504F25 /* PLLoginInputPasswordTextFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLLoginInputPasswordTextFieldView.h; sourceTree = "<group>"; };
+		045A14AD2537F05E00504F25 /* PLLoginInputPasswordTextFieldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLLoginInputPasswordTextFieldView.m; sourceTree = "<group>"; };
+		045A14B22537F8F000504F25 /* PLCanClickLabelWithBottomHorinzontalLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLCanClickLabelWithBottomHorinzontalLine.h; sourceTree = "<group>"; };
+		045A14B32537F8F000504F25 /* PLCanClickLabelWithBottomHorinzontalLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCanClickLabelWithBottomHorinzontalLine.m; sourceTree = "<group>"; };
+		045A14B8253825A800504F25 /* PLRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLRegisterViewController.h; sourceTree = "<group>"; };
+		045A14B9253825A800504F25 /* PLRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLRegisterViewController.m; sourceTree = "<group>"; };
+		045A14BE2538287500504F25 /* PLRegisterRootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLRegisterRootView.h; sourceTree = "<group>"; };
+		045A14BF2538287500504F25 /* PLRegisterRootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLRegisterRootView.m; sourceTree = "<group>"; };
+		045A14C42538452100504F25 /* PLRegisterInputCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLRegisterInputCodeView.h; sourceTree = "<group>"; };
+		045A14C52538452100504F25 /* PLRegisterInputCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLRegisterInputCodeView.m; sourceTree = "<group>"; };
+		045A14D425385BA000504F25 /* HSHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHud.m; sourceTree = "<group>"; };
+		045A14D525385BA000504F25 /* HSHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHud.h; sourceTree = "<group>"; };
+		045AECBB253935F900757813 /* PLLoginAndRegisterNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLLoginAndRegisterNetWork.h; sourceTree = "<group>"; };
+		045AECBC253935F900757813 /* PLLoginAndRegisterNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLLoginAndRegisterNetWork.m; sourceTree = "<group>"; };
+		045AECC12539374100757813 /* PLCommonNetworkUrlConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLCommonNetworkUrlConstant.h; sourceTree = "<group>"; };
+		045AECC22539374100757813 /* PLCommonNetworkUrlConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCommonNetworkUrlConstant.m; sourceTree = "<group>"; };
+		045AECD42539737200757813 /* NSDictionary+JSTDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSTDictionary.m"; sourceTree = "<group>"; };
+		045AECD52539737200757813 /* NSDictionary+JSTDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSTDictionary.h"; sourceTree = "<group>"; };
+		045AECDA253973B300757813 /* NSNumber+JSTNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+JSTNumber.h"; sourceTree = "<group>"; };
+		045AECDB253973B400757813 /* NSNumber+JSTNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+JSTNumber.m"; sourceTree = "<group>"; };
+		0467B0BA253543780004ABBB /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		0467B0BB253543780004ABBB /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		0467B0C0253544DF0004ABBB /* NSString+JSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSString.h"; sourceTree = "<group>"; };
+		0467B0C1253544DF0004ABBB /* NSString+JSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSString.m"; sourceTree = "<group>"; };
+		0467B0C6253546B30004ABBB /* NSData+HSData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HSData.m"; sourceTree = "<group>"; };
+		0467B0C7253546B30004ABBB /* NSData+HSData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HSData.h"; sourceTree = "<group>"; };
+		0467B0CC253554540004ABBB /* PLLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLLoginViewController.h; sourceTree = "<group>"; };
+		0467B0CD253554540004ABBB /* PLLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLLoginViewController.m; sourceTree = "<group>"; };
+		0467B0D6253555B70004ABBB /* PLLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLLoginViewModel.h; sourceTree = "<group>"; };
+		0467B0D7253555B70004ABBB /* PLLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLLoginViewModel.m; sourceTree = "<group>"; };
+		0467B0DF253556A80004ABBB /* PLLoginRootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLLoginRootView.h; sourceTree = "<group>"; };
+		0467B0E0253556A80004ABBB /* PLLoginRootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLLoginRootView.m; sourceTree = "<group>"; };
+		0467B0EB25355B350004ABBB /* PLCustomLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLCustomLabel.h; sourceTree = "<group>"; };
+		0467B0EC25355B350004ABBB /* PLCustomLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCustomLabel.m; sourceTree = "<group>"; };
+		04D833C9253162E200FCD4D5 /* PatientApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D833CC253162E200FCD4D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04D833CD253162E200FCD4D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04D833D2253162E200FCD4D5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04D833D3253162E200FCD4D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04D833D6253162E200FCD4D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04D833D8253162EF00FCD4D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04D833DB253162EF00FCD4D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04D833DD253162EF00FCD4D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D833DE253162EF00FCD4D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04D833E4253162F000FCD4D5 /* PatientAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatientAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D833E8253162F000FCD4D5 /* PatientAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PatientAppTests.m; sourceTree = "<group>"; };
+		04D833EA253162F000FCD4D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D833EF253162F000FCD4D5 /* PatientAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatientAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D833F3253162F000FCD4D5 /* PatientAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PatientAppUITests.m; sourceTree = "<group>"; };
+		04D833F5253162F000FCD4D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CBD9FF3DE7AD3DEECD4F97E /* Pods-PatientApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientApp.debug.xcconfig"; path = "Target Support Files/Pods-PatientApp/Pods-PatientApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4068FD23A5AE634EB8F4E6CD /* Pods_PatientApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PatientApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72827734898B093F38D5C13C /* Pods-PatientApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientApp.release.xcconfig"; path = "Target Support Files/Pods-PatientApp/Pods-PatientApp.release.xcconfig"; sourceTree = "<group>"; };
+		C956547025AEEF9B00C03F31 /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftVC.swift; sourceTree = "<group>"; };
+		C97DF1C325AAE04A006CC96B /* MySwiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftView.swift; sourceTree = "<group>"; };
+		C9860BC425A99AF500053599 /* PatientApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PatientApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		C9860BC525A99AF500053599 /* TestSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04D833C6253162E200FCD4D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2E1B813FE26E786AADE392 /* Pods_PatientApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D833E1253162F000FCD4D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D833EC253162F000FCD4D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		042B837D253439110069A40A /* LoginRegister */ = {
+			isa = PBXGroup;
+			children = (
+				0467B0D5253554B70004ABBB /* M */,
+				0467B0D4253554A80004ABBB /* C */,
+				0467B0D32535549E0004ABBB /* V */,
+				0467B0D2253554900004ABBB /* ViewModel */,
+			);
+			path = LoginRegister;
+			sourceTree = "<group>";
+		};
+		042B838725343CEB0069A40A /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				04544A482536CB38007F739F /* JSBasicViewController.h */,
+				04544A472536CB38007F739F /* JSBasicViewController.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		042B838825343D320069A40A /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				042B838F253442620069A40A /* PLTabbarController.h */,
+				042B8390253442620069A40A /* PLTabbarController.m */,
+			);
+			path = TabbarController;
+			sourceTree = "<group>";
+		};
+		042B839B253445B50069A40A /* C */ = {
+			isa = PBXGroup;
+			children = (
+				042B83AB253446E70069A40A /* PLMyPageViewController.h */,
+				042B83AC253446E70069A40A /* PLMyPageViewController.m */,
+				044DC88C253E6C4600EA1A35 /* PLFindPasswordViewController.h */,
+				044DC88D253E6C4600EA1A35 /* PLFindPasswordViewController.m */,
+				044DC8B5253E812D00EA1A35 /* PLAmendPassWordViewController.h */,
+				044DC8B6253E812D00EA1A35 /* PLAmendPassWordViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		042B839C253445E60069A40A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04544A5E2536DC69007F739F /* MyPageMainViewModel.h */,
+				04544A5F2536DC69007F739F /* MyPageMainViewModel.m */,
+				0453F3BF253D78C400B32F46 /* PLMyPageNetWork.h */,
+				0453F3C0253D78C400B32F46 /* PLMyPageNetWork.m */,
+				044DC89C253E709000EA1A35 /* PLFindPassWordViewModel.h */,
+				044DC89D253E709000EA1A35 /* PLFindPassWordViewModel.m */,
+				044DC8AF253E80F100EA1A35 /* PLAmendPassWordViewModel.h */,
+				044DC8B0253E80F100EA1A35 /* PLAmendPassWordViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		042B839D253446040069A40A /* V */ = {
+			isa = PBXGroup;
+			children = (
+				044DC8A5253E803700EA1A35 /* AmendPassword */,
+				044DC892253E6FFC00EA1A35 /* FindPassWord */,
+				044C5F03253577350058FC6A /* PLMyPageRootView.h */,
+				044C5F04253577350058FC6A /* PLMyPageRootView.m */,
+				044C5F0925357A610058FC6A /* PLMyPageTopPartView.h */,
+				044C5F0A25357A610058FC6A /* PLMyPageTopPartView.m */,
+				044C5F0F25357ABD0058FC6A /* PLMyPageCenterGroupView.h */,
+				044C5F1025357ABD0058FC6A /* PLMyPageCenterGroupView.m */,
+				044C5F15253588B00058FC6A /* PLMyPageBaseScrollView.h */,
+				044C5F16253588B00058FC6A /* PLMyPageBaseScrollView.m */,
+				0421043E25359876008AC002 /* PLMyPageSingleSelectionView.h */,
+				0421043F25359876008AC002 /* PLMyPageSingleSelectionView.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		042B839E2534461B0069A40A /* M */ = {
+			isa = PBXGroup;
+			children = (
+				04544A672536DC8E007F739F /* MyPageMainModel.h */,
+				04544A682536DC8E007F739F /* MyPageMainModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		042B839F2534464C0069A40A /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		042B83A0253446550069A40A /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		042B83A12534465C0069A40A /* C */ = {
+			isa = PBXGroup;
+			children = (
+				042B83B1253447020069A40A /* PLMessageViewController.h */,
+				042B83B2253447020069A40A /* PLMessageViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		042B83A2253446620069A40A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		042B83A3253446750069A40A /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		042B83A4253446820069A40A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		042B83A5253446930069A40A /* C */ = {
+			isa = PBXGroup;
+			children = (
+				042B83B7253447200069A40A /* PLServiceViewController.h */,
+				042B83B8253447200069A40A /* PLServiceViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		042B83A62534469B0069A40A /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		042B83A7253446A90069A40A /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		042B83A8253446B00069A40A /* C */ = {
+			isa = PBXGroup;
+			children = (
+				042B83BD2534474F0069A40A /* PLMainPageViewController.h */,
+				042B83BE2534474F0069A40A /* PLMainPageViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		042B83A9253446B70069A40A /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		042B83AA253446BF0069A40A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		042E2F58253425F60001A5F5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				045AECDA253973B300757813 /* NSNumber+JSTNumber.h */,
+				045AECDB253973B400757813 /* NSNumber+JSTNumber.m */,
+				045AECD52539737200757813 /* NSDictionary+JSTDictionary.h */,
+				045AECD42539737200757813 /* NSDictionary+JSTDictionary.m */,
+				04544A6D2536FC5B007F739F /* UIFont+JSFont.h */,
+				04544A6E2536FC5B007F739F /* UIFont+JSFont.m */,
+				0467B0C7253546B30004ABBB /* NSData+HSData.h */,
+				0467B0C6253546B30004ABBB /* NSData+HSData.m */,
+				0467B0C0253544DF0004ABBB /* NSString+JSString.h */,
+				0467B0C1253544DF0004ABBB /* NSString+JSString.m */,
+				042B8395253443510069A40A /* UIColor+JSColor.h */,
+				042B8396253443510069A40A /* UIColor+JSColor.m */,
+				042B838925343DC90069A40A /* UITabBar+JSCCustomTabbar.h */,
+				042B838A25343DC90069A40A /* UITabBar+JSCCustomTabbar.m */,
+				042B837E25343B380069A40A /* AppDelegate+PatientUI.h */,
+				042B837F25343B380069A40A /* AppDelegate+PatientUI.m */,
+				04544A3225369138007F739F /* UIView+PLCustom.h */,
+				04544A3325369138007F739F /* UIView+PLCustom.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		042E2F59253426A10001A5F5 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0453F3B4253D6E3300B32F46 /* PLUserInfoConstantKey.m */,
+				0453F3B3253D6E3300B32F46 /* PLUserInfoConstantKey.h */,
+				0467B0B92535432C0004ABBB /* Third tools */,
+				042B83D3253451F80069A40A /* PLNetWorkManager.h */,
+				042B83D2253451F80069A40A /* PLNetWorkManager.m */,
+				042E2F5A2534280A0001A5F5 /* PatientPrefixHeader.pch */,
+				0467B0EB25355B350004ABBB /* PLCustomLabel.h */,
+				0467B0EC25355B350004ABBB /* PLCustomLabel.m */,
+				04544A3E2536A39C007F739F /* PLCommonCornerButtonView.h */,
+				04544A3F2536A39C007F739F /* PLCommonCornerButtonView.m */,
+				045A14A02537E27F00504F25 /* PLBaseTextField.h */,
+				045A14A12537E27F00504F25 /* PLBaseTextField.m */,
+				045A14B22537F8F000504F25 /* PLCanClickLabelWithBottomHorinzontalLine.h */,
+				045A14B32537F8F000504F25 /* PLCanClickLabelWithBottomHorinzontalLine.m */,
+				045AECC12539374100757813 /* PLCommonNetworkUrlConstant.h */,
+				045AECC22539374100757813 /* PLCommonNetworkUrlConstant.m */,
+				0453F3C5253D7EFD00B32F46 /* PLNotificationNameKey.h */,
+				0453F3C6253D7EFD00B32F46 /* PLNotificationNameKey.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		044DC892253E6FFC00EA1A35 /* FindPassWord */ = {
+			isa = PBXGroup;
+			children = (
+				044DC893253E703800EA1A35 /* PLFindPassWordRootView.h */,
+				044DC894253E703800EA1A35 /* PLFindPassWordRootView.m */,
+			);
+			path = FindPassWord;
+			sourceTree = "<group>";
+		};
+		044DC8A5253E803700EA1A35 /* AmendPassword */ = {
+			isa = PBXGroup;
+			children = (
+				044DC8A6253E80BA00EA1A35 /* PLAmendPassWordRootView.h */,
+				044DC8A7253E80BA00EA1A35 /* PLAmendPassWordRootView.m */,
+			);
+			path = AmendPassword;
+			sourceTree = "<group>";
+		};
+		0467B0B92535432C0004ABBB /* Third tools */ = {
+			isa = PBXGroup;
+			children = (
+				045A14D525385BA000504F25 /* HSHud.h */,
+				045A14D425385BA000504F25 /* HSHud.m */,
+				04544A4E2536CBBD007F739F /* JSHeaderView.h */,
+				04544A4D2536CBBD007F739F /* JSHeaderView.m */,
+				04544A3825369D12007F739F /* PLRoundedBoardView.h */,
+				04544A3925369D12007F739F /* PLRoundedBoardView.m */,
+				0467B0BB253543780004ABBB /* UIViewExt.h */,
+				0467B0BA253543780004ABBB /* UIViewExt.m */,
+			);
+			path = "Third tools";
+			sourceTree = "<group>";
+		};
+		0467B0D2253554900004ABBB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0467B0D6253555B70004ABBB /* PLLoginViewModel.h */,
+				0467B0D7253555B70004ABBB /* PLLoginViewModel.m */,
+				045AECBB253935F900757813 /* PLLoginAndRegisterNetWork.h */,
+				045AECBC253935F900757813 /* PLLoginAndRegisterNetWork.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0467B0D32535549E0004ABBB /* V */ = {
+			isa = PBXGroup;
+			children = (
+				0467B0DF253556A80004ABBB /* PLLoginRootView.h */,
+				0467B0E0253556A80004ABBB /* PLLoginRootView.m */,
+				045A14A62537E66100504F25 /* PLLoginInputIdentityNumberTextField.h */,
+				045A14A72537E66100504F25 /* PLLoginInputIdentityNumberTextField.m */,
+				045A14AC2537F05E00504F25 /* PLLoginInputPasswordTextFieldView.h */,
+				045A14AD2537F05E00504F25 /* PLLoginInputPasswordTextFieldView.m */,
+				045A14BE2538287500504F25 /* PLRegisterRootView.h */,
+				045A14BF2538287500504F25 /* PLRegisterRootView.m */,
+				045A14C42538452100504F25 /* PLRegisterInputCodeView.h */,
+				045A14C52538452100504F25 /* PLRegisterInputCodeView.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		0467B0D4253554A80004ABBB /* C */ = {
+			isa = PBXGroup;
+			children = (
+				0467B0CC253554540004ABBB /* PLLoginViewController.h */,
+				0467B0CD253554540004ABBB /* PLLoginViewController.m */,
+				045A14B8253825A800504F25 /* PLRegisterViewController.h */,
+				045A14B9253825A800504F25 /* PLRegisterViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		0467B0D5253554B70004ABBB /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		04D833C0253162E200FCD4D5 = {
+			isa = PBXGroup;
+			children = (
+				04D833CB253162E200FCD4D5 /* PatientApp */,
+				04D833E7253162F000FCD4D5 /* PatientAppTests */,
+				04D833F2253162F000FCD4D5 /* PatientAppUITests */,
+				04D833CA253162E200FCD4D5 /* Products */,
+				5480B9B73DC941D3B0439945 /* Pods */,
+				C97CFAC963FEC2DE57510DB1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04D833CA253162E200FCD4D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04D833C9253162E200FCD4D5 /* PatientApp.app */,
+				04D833E4253162F000FCD4D5 /* PatientAppTests.xctest */,
+				04D833EF253162F000FCD4D5 /* PatientAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04D833CB253162E200FCD4D5 /* PatientApp */ = {
+			isa = PBXGroup;
+			children = (
+				C956547025AEEF9B00C03F31 /* NSObjectExtension.swift */,
+				042B838825343D320069A40A /* TabbarController */,
+				042B838725343CEB0069A40A /* BaseVC */,
+				042B837D253439110069A40A /* LoginRegister */,
+				042E2F59253426A10001A5F5 /* Tools */,
+				042E2F58253425F60001A5F5 /* Category */,
+				04D834212531BF3B00FCD4D5 /* MyPage */,
+				04D834202531BF2900FCD4D5 /* Message */,
+				04D8341F2531BF1000FCD4D5 /* Service */,
+				04D8341E2531BEFF00FCD4D5 /* MainPage */,
+				04D833CC253162E200FCD4D5 /* AppDelegate.h */,
+				04D833CD253162E200FCD4D5 /* AppDelegate.m */,
+				04D833D2253162E200FCD4D5 /* ViewController.h */,
+				04D833D3253162E200FCD4D5 /* ViewController.m */,
+				04D833D5253162E200FCD4D5 /* Main.storyboard */,
+				04D833D8253162EF00FCD4D5 /* Assets.xcassets */,
+				04D833DA253162EF00FCD4D5 /* LaunchScreen.storyboard */,
+				04D833DD253162EF00FCD4D5 /* Info.plist */,
+				04D833DE253162EF00FCD4D5 /* main.m */,
+				C9860BC525A99AF500053599 /* TestSwift.swift */,
+				C9860BC425A99AF500053599 /* PatientApp-Bridging-Header.h */,
+				C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */,
+				C97DF1C325AAE04A006CC96B /* MySwiftView.swift */,
+			);
+			path = PatientApp;
+			sourceTree = "<group>";
+		};
+		04D833E7253162F000FCD4D5 /* PatientAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				04D833E8253162F000FCD4D5 /* PatientAppTests.m */,
+				04D833EA253162F000FCD4D5 /* Info.plist */,
+			);
+			path = PatientAppTests;
+			sourceTree = "<group>";
+		};
+		04D833F2253162F000FCD4D5 /* PatientAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04D833F3253162F000FCD4D5 /* PatientAppUITests.m */,
+				04D833F5253162F000FCD4D5 /* Info.plist */,
+			);
+			path = PatientAppUITests;
+			sourceTree = "<group>";
+		};
+		04D8341E2531BEFF00FCD4D5 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				042B83AA253446BF0069A40A /* ViewModel */,
+				042B83A9253446B70069A40A /* M */,
+				042B83A8253446B00069A40A /* C */,
+				042B83A7253446A90069A40A /* V */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		04D8341F2531BF1000FCD4D5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				042B83A62534469B0069A40A /* V */,
+				042B83A5253446930069A40A /* C */,
+				042B83A4253446820069A40A /* ViewModel */,
+				042B83A3253446750069A40A /* M */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		04D834202531BF2900FCD4D5 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				042B83A2253446620069A40A /* ViewModel */,
+				042B83A12534465C0069A40A /* C */,
+				042B83A0253446550069A40A /* V */,
+				042B839F2534464C0069A40A /* M */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		04D834212531BF3B00FCD4D5 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				042B839E2534461B0069A40A /* M */,
+				042B839D253446040069A40A /* V */,
+				042B839C253445E60069A40A /* ViewModel */,
+				042B839B253445B50069A40A /* C */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		5480B9B73DC941D3B0439945 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CBD9FF3DE7AD3DEECD4F97E /* Pods-PatientApp.debug.xcconfig */,
+				72827734898B093F38D5C13C /* Pods-PatientApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C97CFAC963FEC2DE57510DB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4068FD23A5AE634EB8F4E6CD /* Pods_PatientApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04D833C8253162E200FCD4D5 /* PatientApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D833F8253162F000FCD4D5 /* Build configuration list for PBXNativeTarget "PatientApp" */;
+			buildPhases = (
+				96B06569699C89619AEDE8D8 /* [CP] Check Pods Manifest.lock */,
+				04D833C5253162E200FCD4D5 /* Sources */,
+				04D833C6253162E200FCD4D5 /* Frameworks */,
+				04D833C7253162E200FCD4D5 /* Resources */,
+				2F9538001579404F3351F115 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PatientApp;
+			productName = PatientApp;
+			productReference = 04D833C9253162E200FCD4D5 /* PatientApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04D833E3253162F000FCD4D5 /* PatientAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D833FB253162F000FCD4D5 /* Build configuration list for PBXNativeTarget "PatientAppTests" */;
+			buildPhases = (
+				04D833E0253162F000FCD4D5 /* Sources */,
+				04D833E1253162F000FCD4D5 /* Frameworks */,
+				04D833E2253162F000FCD4D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04D833E6253162F000FCD4D5 /* PBXTargetDependency */,
+			);
+			name = PatientAppTests;
+			productName = PatientAppTests;
+			productReference = 04D833E4253162F000FCD4D5 /* PatientAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04D833EE253162F000FCD4D5 /* PatientAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D833FE253162F000FCD4D5 /* Build configuration list for PBXNativeTarget "PatientAppUITests" */;
+			buildPhases = (
+				04D833EB253162F000FCD4D5 /* Sources */,
+				04D833EC253162F000FCD4D5 /* Frameworks */,
+				04D833ED253162F000FCD4D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04D833F1253162F000FCD4D5 /* PBXTargetDependency */,
+			);
+			name = PatientAppUITests;
+			productName = PatientAppUITests;
+			productReference = 04D833EF253162F000FCD4D5 /* PatientAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04D833C1253162E200FCD4D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					04D833C8253162E200FCD4D5 = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1150;
+					};
+					04D833E3253162F000FCD4D5 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 04D833C8253162E200FCD4D5;
+					};
+					04D833EE253162F000FCD4D5 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 04D833C8253162E200FCD4D5;
+					};
+				};
+			};
+			buildConfigurationList = 04D833C4253162E200FCD4D5 /* Build configuration list for PBXProject "PatientApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04D833C0253162E200FCD4D5;
+			productRefGroup = 04D833CA253162E200FCD4D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04D833C8253162E200FCD4D5 /* PatientApp */,
+				04D833E3253162F000FCD4D5 /* PatientAppTests */,
+				04D833EE253162F000FCD4D5 /* PatientAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04D833C7253162E200FCD4D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D833DC253162EF00FCD4D5 /* LaunchScreen.storyboard in Resources */,
+				04D833D9253162EF00FCD4D5 /* Assets.xcassets in Resources */,
+				04D833D7253162E200FCD4D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D833E2253162F000FCD4D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D833ED253162F000FCD4D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F9538001579404F3351F115 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PatientApp/Pods-PatientApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PatientApp/Pods-PatientApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PatientApp/Pods-PatientApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96B06569699C89619AEDE8D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PatientApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04D833C5253162E200FCD4D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044DC88E253E6C4600EA1A35 /* PLFindPasswordViewController.m in Sources */,
+				042B83D4253451F80069A40A /* PLNetWorkManager.m in Sources */,
+				045AECD62539737200757813 /* NSDictionary+JSTDictionary.m in Sources */,
+				044C5F17253588B00058FC6A /* PLMyPageBaseScrollView.m in Sources */,
+				045A14B42537F8F000504F25 /* PLCanClickLabelWithBottomHorinzontalLine.m in Sources */,
+				0467B0C8253546B30004ABBB /* NSData+HSData.m in Sources */,
+				042B838025343B380069A40A /* AppDelegate+PatientUI.m in Sources */,
+				044DC895253E703800EA1A35 /* PLFindPassWordRootView.m in Sources */,
+				04544A602536DC69007F739F /* MyPageMainViewModel.m in Sources */,
+				044DC8B1253E80F100EA1A35 /* PLAmendPassWordViewModel.m in Sources */,
+				045A14C62538452100504F25 /* PLRegisterInputCodeView.m in Sources */,
+				044C5F0B25357A610058FC6A /* PLMyPageTopPartView.m in Sources */,
+				044C5F05253577350058FC6A /* PLMyPageRootView.m in Sources */,
+				044DC8A8253E80BA00EA1A35 /* PLAmendPassWordRootView.m in Sources */,
+				042B8391253442620069A40A /* PLTabbarController.m in Sources */,
+				C9860BC625A99AF500053599 /* TestSwift.swift in Sources */,
+				0467B0D8253555B70004ABBB /* PLLoginViewModel.m in Sources */,
+				04544A492536CB38007F739F /* JSBasicViewController.m in Sources */,
+				042B83BF2534474F0069A40A /* PLMainPageViewController.m in Sources */,
+				042B838B25343DCA0069A40A /* UITabBar+JSCCustomTabbar.m in Sources */,
+				0467B0CE253554540004ABBB /* PLLoginViewController.m in Sources */,
+				044DC8B7253E812D00EA1A35 /* PLAmendPassWordViewController.m in Sources */,
+				0467B0ED25355B350004ABBB /* PLCustomLabel.m in Sources */,
+				042B83AD253446E70069A40A /* PLMyPageViewController.m in Sources */,
+				044C5F1125357ABD0058FC6A /* PLMyPageCenterGroupView.m in Sources */,
+				C97DF1C225AAD0E2006CC96B /* SwiftVC.swift in Sources */,
+				045AECBD253935F900757813 /* PLLoginAndRegisterNetWork.m in Sources */,
+				04544A3425369138007F739F /* UIView+PLCustom.m in Sources */,
+				0453F3C7253D7EFD00B32F46 /* PLNotificationNameKey.m in Sources */,
+				04544A692536DC8E007F739F /* MyPageMainModel.m in Sources */,
+				045A14A22537E27F00504F25 /* PLBaseTextField.m in Sources */,
+				042B8397253443510069A40A /* UIColor+JSColor.m in Sources */,
+				045AECC32539374100757813 /* PLCommonNetworkUrlConstant.m in Sources */,
+				045A14D625385BA100504F25 /* HSHud.m in Sources */,
+				C956547125AEEF9B00C03F31 /* NSObjectExtension.swift in Sources */,
+				045A14C02538287500504F25 /* PLRegisterRootView.m in Sources */,
+				044DC89E253E709000EA1A35 /* PLFindPassWordViewModel.m in Sources */,
+				0467B0E1253556A80004ABBB /* PLLoginRootView.m in Sources */,
+				0453F3B5253D6E3300B32F46 /* PLUserInfoConstantKey.m in Sources */,
+				045A14A82537E66100504F25 /* PLLoginInputIdentityNumberTextField.m in Sources */,
+				04D833D4253162E200FCD4D5 /* ViewController.m in Sources */,
+				045AECDC253973B400757813 /* NSNumber+JSTNumber.m in Sources */,
+				042B83B3253447020069A40A /* PLMessageViewController.m in Sources */,
+				04544A3A25369D12007F739F /* PLRoundedBoardView.m in Sources */,
+				0421044025359876008AC002 /* PLMyPageSingleSelectionView.m in Sources */,
+				045A14AE2537F05E00504F25 /* PLLoginInputPasswordTextFieldView.m in Sources */,
+				0467B0BC253543780004ABBB /* UIViewExt.m in Sources */,
+				0453F3C1253D78C400B32F46 /* PLMyPageNetWork.m in Sources */,
+				04544A4F2536CBBD007F739F /* JSHeaderView.m in Sources */,
+				045A14BA253825A800504F25 /* PLRegisterViewController.m in Sources */,
+				04D833CE253162E200FCD4D5 /* AppDelegate.m in Sources */,
+				C97DF1C425AAE04A006CC96B /* MySwiftView.swift in Sources */,
+				0467B0C2253544DF0004ABBB /* NSString+JSString.m in Sources */,
+				04544A402536A39C007F739F /* PLCommonCornerButtonView.m in Sources */,
+				042B83B9253447200069A40A /* PLServiceViewController.m in Sources */,
+				04544A6F2536FC5B007F739F /* UIFont+JSFont.m in Sources */,
+				04D833DF253162EF00FCD4D5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D833E0253162F000FCD4D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D833E9253162F000FCD4D5 /* PatientAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D833EB253162F000FCD4D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D833F4253162F000FCD4D5 /* PatientAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04D833E6253162F000FCD4D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04D833C8253162E200FCD4D5 /* PatientApp */;
+			targetProxy = 04D833E5253162F000FCD4D5 /* PBXContainerItemProxy */;
+		};
+		04D833F1253162F000FCD4D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04D833C8253162E200FCD4D5 /* PatientApp */;
+			targetProxy = 04D833F0253162F000FCD4D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04D833D5253162E200FCD4D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04D833D6253162E200FCD4D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04D833DA253162EF00FCD4D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04D833DB253162EF00FCD4D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04D833F6253162F000FCD4D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04D833F7253162F000FCD4D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04D833F9253162F000FCD4D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CBD9FF3DE7AD3DEECD4F97E /* Pods-PatientApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N64S25EDC3;
+				ENABLE_BITCODE = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PatientApp/Tools/PatientPrefixHeader.pch";
+				INFOPLIST_FILE = PatientApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"TYCyclePagerView\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sddffff.PatientApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PatientApp/PatientApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		04D833FA253162F000FCD4D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72827734898B093F38D5C13C /* Pods-PatientApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N64S25EDC3;
+				ENABLE_BITCODE = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PatientApp/Tools/PatientPrefixHeader.pch";
+				INFOPLIST_FILE = PatientApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"TYCyclePagerView\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sddffff.PatientApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PatientApp/PatientApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		04D833FC253162F000FCD4D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PatientAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sddffff.PatientAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PatientApp.app/PatientApp";
+			};
+			name = Debug;
+		};
+		04D833FD253162F000FCD4D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PatientAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sddffff.PatientAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PatientApp.app/PatientApp";
+			};
+			name = Release;
+		};
+		04D833FF253162F000FCD4D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PatientAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sddffff.PatientAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PatientApp;
+			};
+			name = Debug;
+		};
+		04D83400253162F000FCD4D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PatientAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sddffff.PatientAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PatientApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04D833C4253162E200FCD4D5 /* Build configuration list for PBXProject "PatientApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D833F6253162F000FCD4D5 /* Debug */,
+				04D833F7253162F000FCD4D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D833F8253162F000FCD4D5 /* Build configuration list for PBXNativeTarget "PatientApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D833F9253162F000FCD4D5 /* Debug */,
+				04D833FA253162F000FCD4D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D833FB253162F000FCD4D5 /* Build configuration list for PBXNativeTarget "PatientAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D833FC253162F000FCD4D5 /* Debug */,
+				04D833FD253162F000FCD4D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D833FE253162F000FCD4D5 /* Build configuration list for PBXNativeTarget "PatientAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D833FF253162F000FCD4D5 /* Debug */,
+				04D83400253162F000FCD4D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04D833C1253162E200FCD4D5 /* Project object */;
+}

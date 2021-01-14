@@ -1,0 +1,72 @@
+//
+//  PatientPrefixHeader.pch
+//  PatientApp
+//
+//  Created by mac on 2020/10/12.
+//
+
+#ifndef PatientPrefixHeader_pch
+#define PatientPrefixHeader_pch
+//category
+#import "UIColor+JSColor.h"
+#import "AppDelegate+PatientUI.h"
+#import "NSString+JSString.h"
+#import "UIView+PLCustom.h"
+#import "UIFont+JSFont.h"
+#import "NSDictionary+JSTDictionary.h"
+
+//own write file
+#import "PLNetWorkManager.h"
+#import "PLCustomLabel.h"
+#import "PLCommonCornerButtonView.h"
+#import "JSBasicViewController.h"
+#import "PLBaseTextField.h"
+
+//third part
+#import "UIViewExt.h"
+#import "Masonry/Masonry.h"
+#import "HSHud.h"
+
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#define UI_IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define UI_IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
+//导航栏高度（包括状态栏在内）
+#define IPHONE_NAVIGATIONBAR_HEIGHT  (IS_IPHONE_X_ALL ? 88 : 64)
+//状态栏高度
+#define IPHONE_STATUSBAR_HEIGHT      (IS_IPHONE_X_ALL ? 44 : 20)
+//底部安全区域高度
+#define IPHONE_SAFEBOTTOMAREA_HEIGHT (IS_IPHONE_X_ALL ? 34 : 0)
+//顶部传感器高度
+#define IPHONE_TOPSENSOR_HEIGHT      (IS_IPHONE_X_ALL ? 32 : 0)
+
+//底部标签栏高度
+#define TAB_BAR_HEIGHT (IS_IPHONE_X_ALL ? 83.f : 49.f)
+//当使用自定义导航栏 有导航状态和标签栏时的view高度
+#define IPHONE_CENTER_VIEW_HEIGHT SCREEN_HEIGHT - IPHONE_NAVIGATIONBAR_HEIGHT - TAB_BAR_HEIGHT
+
+// iPhone4S
+#define IS_iPhone_4S ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+
+// iPhone5 iPhone5s iPhoneSE
+#define IS_iPhone_5AndSE ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//判断iPHoneXr
+#define IS_IPHONE_XR ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) && !UI_IS_IPAD : NO)
+
+//判断iPHoneX、iPHoneXs
+#define IS_IPHONE_X ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) && !UI_IS_IPAD : NO)
+#define IS_IPHONE_XS ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) && !UI_IS_IPAD : NO)
+
+//判断iPhoneXs Max
+#define IS_IPHONE_XS_MAX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) && !UI_IS_IPAD : NO)
+
+//判断是否是iPhone X系列
+#define IS_IPHONE_X_ALL ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896) || IS_IPHONE_XR
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+
+#endif /* PatientPrefixHeader_pch */
