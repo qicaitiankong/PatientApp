@@ -12,8 +12,4 @@ class CompleteDataModel: Codable {
     var data:DataModel?
     var msg: String?
     
-    enum CodingKeys:String,CodingKey {
-        case status,data,msg
-    }
-    
 }

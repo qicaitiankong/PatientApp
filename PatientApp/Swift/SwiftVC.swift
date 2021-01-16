@@ -22,8 +22,7 @@ class SwiftVC: UIViewController,UITableViewDelegate,UITableViewDataSource
     var pageNumber = 1
     var isRefresh = true
     var tableView: UITableView?
-    lazy var modelArr: [MiddleListPageDataModel] = []
-    
+    lazy var modelArr: [ZhDetailModel] = []
     
     override func viewDidLoad()
       {
@@ -32,6 +31,7 @@ class SwiftVC: UIViewController,UITableViewDelegate,UITableViewDataSource
           startWebListening()
           addTableView()
           self.tableView?.mj_header?.beginRefreshing()
+               
       }
     
     func addTableView() {
@@ -133,95 +133,157 @@ class SwiftVC: UIViewController,UITableViewDelegate,UITableViewDataSource
         
     }
     
-    /// 上拉没数据复位页数并停止刷新
-    func resetPageWhenNoDataForLoad()
-    {
-         if isRefresh == false
-         {
-                self.tableView?.mj_footer?.endRefreshingWithNoMoreData()
-                if self.pageNumber > 1
-                {
-                     self.pageNumber -= 1
-                }
-        }
-    }
-    
-    /// 上拉有数据停止加载
-    func endRerenshWhenHaveDataForLoad()  {
-        if isRefresh == false
-         {
-                self.tableView?.mj_footer?.endRefreshing()
-        }
-    }
-    //下拉刷新页面
-    func refreshTableViewForRefresh()  {
-        if isRefresh == true
-         {
-            self.tableView?.reloadData()
-        }
-    }
-    
     func dealData(data: Data?,err: Error?) ->Void {
         
-        if isRefresh
-        {
-            self.tableView?.mj_footer?.resetNoMoreData()
-            self.tableView?.mj_header?.endRefreshing()
-        }
         if let error = err
         {
             print(error.localizedDescription)
-            
-            endRerenshWhenHaveDataForLoad()
+            endRefreshOrLoad()
         }else
         {
             if isRefresh
             {
+                self.tableView?.mj_footer?.resetNoMoreData()
+                self.tableView?.mj_header?.endRefreshing()
                 self.modelArr.removeAll()
             }
-                var totoalPage:Int?
-                if let targetData = data
-                {
-                    let decoder = JSONDecoder()
-                    if let totalDataModel = try? decoder.decode(CompleteDataModel.self, from: targetData)
-                    {
-                       
-                        if let status = totalDataModel.status
-                        {
-                            if status == 0
-                            {
-                                if let modelArr = totalDataModel.data?.list
-                                {
-                                    totoalPage = totalDataModel.data?.totalPage
-                                    for model in modelArr
-                                    {
-                                        model.setNeedValue()
-                                        self.modelArr.append(model)
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            if let localTotalPage = totoalPage
+            //数据总页数
+           var totoalPage:Int?
+           if let totalModel = getTotalModel(data: data)
+           {
+               totoalPage = totalModel.data?.totalPage
+           }
+           
+            if isRefresh
             {
-                if self.pageNumber > localTotalPage
-                {
-                    resetPageWhenNoDataForLoad()
-                }else
-                {
-                     endRerenshWhenHaveDataForLoad()
-                     self.tableView?.reloadData()
-                }
+                refreshTableViewForRefresh()
             }else
             {
-                resetPageWhenNoDataForLoad()
-                endRerenshWhenHaveDataForLoad()
+                    if let localTotalPage = totoalPage
+                    {
+                        //当前页数大于总页数
+                        if self.pageNumber > localTotalPage
+                        {
+                            endRefreshWhenNoDataForLoad()
+                        }else
+                        {
+                             endRerenshWhenHaveDataForLoad()
+                             self.tableView?.reloadData()
+                        }
+                    }else
+                    {
+                        if self.pageNumber > 1
+                        {
+                            self.pageNumber -= 1
+                        }
+                        self.tableView?.mj_footer?.endRefreshing()
+                    }
             }
-            refreshTableViewForRefresh()
         }
     }
     
+    /// 上拉没数据复位页数并停止刷新
+       func endRefreshWhenNoDataForLoad()
+       {
+            if isRefresh == false
+            {
+                   self.tableView?.mj_footer?.endRefreshingWithNoMoreData()
+                   if self.pageNumber > 1
+                   {
+                        self.pageNumber -= 1
+                   }
+           }
+       }
+       
+       /// 上拉有数据停止加载
+       func endRerenshWhenHaveDataForLoad()  {
+           if isRefresh == false
+            {
+                   self.tableView?.mj_footer?.endRefreshing()
+           }
+       }
+       
+       /// 停止刷新或加载
+       func endRefreshOrLoad() {
+           if isRefresh == false
+           {
+               self.tableView?.mj_footer?.endRefreshing()
+           }else
+           {
+               self.tableView?.mj_header?.endRefreshing()
+           }
+       }
+       
+       //下拉刷新页面
+       func refreshTableViewForRefresh()  {
+           if isRefresh == true
+            {
+               self.tableView?.reloadData()
+           }
+       }
+       
+    
+    /// 用类作为数据模型
+    /// - Parameter data: <#data description#>
+    /// - Returns: <#description#>
+//    func getTotalModel(data:Data?) -> CompleteDataModel?{
+//        var totalModel:CompleteDataModel?
+//        if let targetData = data
+//               {
+//                   let decoder = JSONDecoder()
+//                    totalModel = try? decoder.decode(CompleteDataModel.self, from: targetData)
+//                   if let totalDataModel = totalModel
+//                   {
+//                       if let status = totalDataModel.status
+//                       {
+//                           if status == 0
+//                           {
+//                               if let modelArr = totalDataModel.data?.list
+//                               {
+//                                        for model in modelArr
+//                                   {
+//                                       model.setNeedValue()
+//                                       self.modelArr.append(model)
+//                                   }
+//                               }
+//                           }
+//                       }
+//                   }
+//        }
+//        return totalModel
+//    }
+    
+    /// 用结构体作为数据模型
+    /// - Parameter data: <#data description#>
+    /// - Returns: <#description#>
+    func getTotalModel(data:Data?) -> ZhTotalDataModel?{
+        var totalModel:ZhTotalDataModel?
+        if let targetData = data
+               {
+                   let decoder = JSONDecoder()
+                    totalModel = try? decoder.decode(ZhTotalDataModel.self, from: targetData)
+                   
+                   if let totalDataModel = totalModel
+                   {
+                       if let status = totalDataModel.status
+                       {
+                           if status == 0
+                           {
+                               if let modelArr = totalDataModel.data?.list
+                               {
+                                        for model in modelArr
+                                   {
+                                       var targetModel = model
+                                       targetModel.setNeedValue()
+                                       self.modelArr.append(targetModel)
+                                   }
+                               }
+                           }
+                       }
+                   }
+        }
+        return totalModel
+    }
     //实时监测
        func startWebListening() {
            

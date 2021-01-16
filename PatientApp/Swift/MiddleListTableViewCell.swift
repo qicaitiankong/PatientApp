@@ -10,7 +10,7 @@ import UIKit
 
 class MiddleListTableViewCell: UITableViewCell {
     
-    var model: MiddleListPageDataModel?
+    var model: ZhDetailModel?
     var topImageView: UIImageView?
     var topTitleLabe: UILabel?
     var nickNameLab: UILabel?

@@ -12,7 +12,5 @@ class DataModel: Codable
      var list:[MiddleListPageDataModel]?
      var pageSize: Int?
      var totalPage: Int?
-     enum CodingKeys:String,CodingKey {
-        case list,pageSize,totalPage
-     }
+    
 }

@@ -52,5 +52,7 @@ public extension String {
         let rect = self.boundingRect(with: CGSize(width: labelWidth, height: 1000.0), options:option, attributes: attributes, context: nil)
         return rect.height
     }
+    
+    
 }
 
