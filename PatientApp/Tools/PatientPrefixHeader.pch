@@ -7,6 +7,7 @@
 
 #ifndef PatientPrefixHeader_pch
 #define PatientPrefixHeader_pch
+#import <UIKit/UIKit.h>
 //category
 #import "UIColor+JSColor.h"
 #import "AppDelegate+PatientUI.h"
