@@ -10,6 +10,7 @@
 #import "PatientApp-Swift.h"
 #import "BlockStudyViewController.h"
 #import "CopyStudyViewController.h"
+#import "RuntimeStudyViewController.h"
 
 const NSInteger singleViewHeight = 50;
 
@@ -60,6 +61,25 @@ const NSInteger singleViewHeight = 50;
         make.height.mas_equalTo(singleViewHeight);
         make.width.height.mas_equalTo(100);
     }];
+    
+    //
+    UIButton *centenbutton4 = [UIButton buttonWithType:UIButtonTypeCustom];
+    centenbutton4.backgroundColor = UIColor.grayColor;
+    [centenbutton4 setTitle:@"runtime测试" forState:UIControlStateNormal];
+    [self.view addSubview:centenbutton4];
+    [centenbutton4 addTarget:self action:@selector(runtimeStudy) forControlEvents:UIControlEventTouchUpInside];
+    [centenbutton4 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(20);
+        make.top.mas_equalTo(centenbutton3.mas_bottom).mas_offset(10);
+        make.height.mas_equalTo(singleViewHeight);
+        make.width.height.mas_equalTo(100);
+    }];
+}
+
+- (void)runtimeStudy{
+    RuntimeStudyViewController *runTimeVC = [[RuntimeStudyViewController alloc]init];
+    runTimeVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:runTimeVC animated:YES];
 }
 
 - (void)copyStudy{

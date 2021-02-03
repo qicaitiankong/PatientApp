@@ -73,6 +73,8 @@
 		C936E42725AFED8C0086E73B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936E42625AFED8C0086E73B /* StringExtension.swift */; };
 		C936E42925B03EC20086E73B /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936E42825B03EC20086E73B /* DataModel.swift */; };
 		C936E42B25B0402F0086E73B /* CompleteDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936E42A25B0402F0086E73B /* CompleteDataModel.swift */; };
+		C9631E9E25CA39ED00155572 /* RuntimeStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9631E9D25CA39ED00155572 /* RuntimeStudyViewController.m */; };
+		C9631EA125CA703500155572 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = C9631EA025CA703500155572 /* Game.m */; };
 		C966E35625C929920007A7D1 /* CopyStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C966E35525C929920007A7D1 /* CopyStudyViewController.m */; };
 		C966E35925C9401A0007A7D1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C966E35825C9401A0007A7D1 /* Person.m */; };
 		C96CCB2125C7EEAD00405DDC /* BlockStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96CCB2025C7EEAD00405DDC /* BlockStudyViewController.m */; };
@@ -224,6 +226,10 @@
 		C936E42625AFED8C0086E73B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		C936E42825B03EC20086E73B /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		C936E42A25B0402F0086E73B /* CompleteDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteDataModel.swift; sourceTree = "<group>"; };
+		C9631E9C25CA39ED00155572 /* RuntimeStudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeStudyViewController.h; sourceTree = "<group>"; };
+		C9631E9D25CA39ED00155572 /* RuntimeStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeStudyViewController.m; sourceTree = "<group>"; };
+		C9631E9F25CA703500155572 /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		C9631EA025CA703500155572 /* Game.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		C966E35425C929920007A7D1 /* CopyStudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyStudyViewController.h; sourceTree = "<group>"; };
 		C966E35525C929920007A7D1 /* CopyStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyStudyViewController.m; sourceTree = "<group>"; };
 		C966E35725C9401A0007A7D1 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -423,6 +429,10 @@
 				C966E35525C929920007A7D1 /* CopyStudyViewController.m */,
 				C966E35725C9401A0007A7D1 /* Person.h */,
 				C966E35825C9401A0007A7D1 /* Person.m */,
+				C9631E9C25CA39ED00155572 /* RuntimeStudyViewController.h */,
+				C9631E9D25CA39ED00155572 /* RuntimeStudyViewController.m */,
+				C9631E9F25CA703500155572 /* Game.h */,
+				C9631EA025CA703500155572 /* Game.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -916,6 +926,7 @@
 				C966E35925C9401A0007A7D1 /* Person.m in Sources */,
 				042B83AD253446E70069A40A /* PLMyPageViewController.m in Sources */,
 				044C5F1125357ABD0058FC6A /* PLMyPageCenterGroupView.m in Sources */,
+				C9631E9E25CA39ED00155572 /* RuntimeStudyViewController.m in Sources */,
 				C936E42125AFE4770086E73B /* MiddleDetailViewController.swift in Sources */,
 				C97DF1C225AAD0E2006CC96B /* SwiftVC.swift in Sources */,
 				045AECBD253935F900757813 /* PLLoginAndRegisterNetWork.m in Sources */,
@@ -931,6 +942,7 @@
 				C936E42B25B0402F0086E73B /* CompleteDataModel.swift in Sources */,
 				044DC89E253E709000EA1A35 /* PLFindPassWordViewModel.m in Sources */,
 				0467B0E1253556A80004ABBB /* PLLoginRootView.m in Sources */,
+				C9631EA125CA703500155572 /* Game.m in Sources */,
 				0453F3B5253D6E3300B32F46 /* PLUserInfoConstantKey.m in Sources */,
 				045A14A82537E66100504F25 /* PLLoginInputIdentityNumberTextField.m in Sources */,
 				04D833D4253162E200FCD4D5 /* ViewController.m in Sources */,
@@ -1128,6 +1140,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = N64S25EDC3;
 				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PatientApp/Tools/PatientPrefixHeader.pch";
@@ -1180,6 +1193,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = N64S25EDC3;
 				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PatientApp/Tools/PatientPrefixHeader.pch";

@@ -33,6 +33,10 @@
     [coder encodeObject:self.name forKey:@"name"];
 }
 
+- (void)DoThings:(NSString*)Str Num:(NSInteger)num
+{
+    NSLog(@"我来完成game中的方法实现");
+}
 
 
 
