@@ -11,6 +11,7 @@
 #import "BlockStudyViewController.h"
 #import "CopyStudyViewController.h"
 #import "RuntimeStudyViewController.h"
+#import "UIControl+ZHRepeatClick.h"
 
 const NSInteger singleViewHeight = 50;
 
@@ -27,6 +28,8 @@ const NSInteger singleViewHeight = 50;
     self.view.backgroundColor = [UIColor whiteColor];
    
     UIButton *centenbutton = [UIButton buttonWithType:UIButtonTypeCustom];
+    centenbutton.zh_acceptEventInterval = 4;
+    NSLog(@"centenbutton : %@",[centenbutton class]);
     centenbutton.backgroundColor = UIColor.grayColor;
     [centenbutton setTitle:@"跳转swift vc" forState:UIControlStateNormal];
     [self.view addSubview:centenbutton];

@@ -78,6 +78,17 @@
 		C966E35625C929920007A7D1 /* CopyStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C966E35525C929920007A7D1 /* CopyStudyViewController.m */; };
 		C966E35925C9401A0007A7D1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C966E35825C9401A0007A7D1 /* Person.m */; };
 		C96CCB2125C7EEAD00405DDC /* BlockStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96CCB2025C7EEAD00405DDC /* BlockStudyViewController.m */; };
+		C971538C25CB7CFC00B911A1 /* RuntimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C971538B25CB7CFC00B911A1 /* RuntimeModel.m */; };
+		C971538F25CB7DBF00B911A1 /* NSObject+RuntimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C971538E25CB7DBF00B911A1 /* NSObject+RuntimeModel.m */; };
+		C971539325CB8D5C00B911A1 /* RuntimeStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = C971539225CB8D5C00B911A1 /* RuntimeStudent.m */; };
+		C971539625CB8D7000B911A1 /* RuntimePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C971539525CB8D7000B911A1 /* RuntimePerson.m */; };
+		C971539925CB8EA400B911A1 /* RuntimeStudent+Zh.m in Sources */ = {isa = PBXBuildFile; fileRef = C971539825CB8EA400B911A1 /* RuntimeStudent+Zh.m */; };
+		C971539C25CBD10300B911A1 /* UIViewController+BuryingPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C971539B25CBD10300B911A1 /* UIViewController+BuryingPoint.m */; };
+		C97153A225CBE1EC00B911A1 /* NSArray+BurryPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C97153A125CBE1EC00B911A1 /* NSArray+BurryPoint.m */; };
+		C97D2AFA25CD1A240010F674 /* ZHPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C97D2AF925CD1A240010F674 /* ZHPerson.m */; };
+		C97D2AFD25CD1B070010F674 /* ZHPerson+Sport.m in Sources */ = {isa = PBXBuildFile; fileRef = C97D2AFC25CD1B070010F674 /* ZHPerson+Sport.m */; };
+		C97D2B0025CD1C7C0010F674 /* ZHPerson+Eat.m in Sources */ = {isa = PBXBuildFile; fileRef = C97D2AFF25CD1C7C0010F674 /* ZHPerson+Eat.m */; };
+		C97D2B0325CD44B60010F674 /* UIControl+ZHRepeatClick.m in Sources */ = {isa = PBXBuildFile; fileRef = C97D2B0225CD44B60010F674 /* UIControl+ZHRepeatClick.m */; };
 		C97DF1C225AAD0E2006CC96B /* SwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -236,6 +247,28 @@
 		C966E35825C9401A0007A7D1 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		C96CCB1F25C7EEAD00405DDC /* BlockStudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStudyViewController.h; sourceTree = "<group>"; };
 		C96CCB2025C7EEAD00405DDC /* BlockStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStudyViewController.m; sourceTree = "<group>"; };
+		C971538A25CB7CFC00B911A1 /* RuntimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeModel.h; sourceTree = "<group>"; };
+		C971538B25CB7CFC00B911A1 /* RuntimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeModel.m; sourceTree = "<group>"; };
+		C971538D25CB7DBF00B911A1 /* NSObject+RuntimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RuntimeModel.h"; sourceTree = "<group>"; };
+		C971538E25CB7DBF00B911A1 /* NSObject+RuntimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RuntimeModel.m"; sourceTree = "<group>"; };
+		C971539125CB8D5C00B911A1 /* RuntimeStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeStudent.h; sourceTree = "<group>"; };
+		C971539225CB8D5C00B911A1 /* RuntimeStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeStudent.m; sourceTree = "<group>"; };
+		C971539425CB8D7000B911A1 /* RuntimePerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimePerson.h; sourceTree = "<group>"; };
+		C971539525CB8D7000B911A1 /* RuntimePerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimePerson.m; sourceTree = "<group>"; };
+		C971539725CB8EA400B911A1 /* RuntimeStudent+Zh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RuntimeStudent+Zh.h"; sourceTree = "<group>"; };
+		C971539825CB8EA400B911A1 /* RuntimeStudent+Zh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RuntimeStudent+Zh.m"; sourceTree = "<group>"; };
+		C971539A25CBD10300B911A1 /* UIViewController+BuryingPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BuryingPoint.h"; sourceTree = "<group>"; };
+		C971539B25CBD10300B911A1 /* UIViewController+BuryingPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BuryingPoint.m"; sourceTree = "<group>"; };
+		C97153A025CBE1EC00B911A1 /* NSArray+BurryPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+BurryPoint.h"; sourceTree = "<group>"; };
+		C97153A125CBE1EC00B911A1 /* NSArray+BurryPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BurryPoint.m"; sourceTree = "<group>"; };
+		C97D2AF825CD1A240010F674 /* ZHPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHPerson.h; sourceTree = "<group>"; };
+		C97D2AF925CD1A240010F674 /* ZHPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHPerson.m; sourceTree = "<group>"; };
+		C97D2AFB25CD1B070010F674 /* ZHPerson+Sport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZHPerson+Sport.h"; sourceTree = "<group>"; };
+		C97D2AFC25CD1B070010F674 /* ZHPerson+Sport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZHPerson+Sport.m"; sourceTree = "<group>"; };
+		C97D2AFE25CD1C7C0010F674 /* ZHPerson+Eat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZHPerson+Eat.h"; sourceTree = "<group>"; };
+		C97D2AFF25CD1C7C0010F674 /* ZHPerson+Eat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZHPerson+Eat.m"; sourceTree = "<group>"; };
+		C97D2B0125CD44B60010F674 /* UIControl+ZHRepeatClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+ZHRepeatClick.h"; sourceTree = "<group>"; };
+		C97D2B0225CD44B60010F674 /* UIControl+ZHRepeatClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ZHRepeatClick.m"; sourceTree = "<group>"; };
 		C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftVC.swift; sourceTree = "<group>"; };
 		C9860BC425A99AF500053599 /* PatientApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PatientApp-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -421,6 +454,8 @@
 		042B83A8253446B00069A40A /* C */ = {
 			isa = PBXGroup;
 			children = (
+				C97D2AF725CD17320010F674 /* Category */,
+				C971539025CB8D1200B911A1 /* Runtime */,
 				042B83BD2534474F0069A40A /* PLMainPageViewController.h */,
 				042B83BE2534474F0069A40A /* PLMainPageViewController.m */,
 				C96CCB1F25C7EEAD00405DDC /* BlockStudyViewController.h */,
@@ -429,8 +464,6 @@
 				C966E35525C929920007A7D1 /* CopyStudyViewController.m */,
 				C966E35725C9401A0007A7D1 /* Person.h */,
 				C966E35825C9401A0007A7D1 /* Person.m */,
-				C9631E9C25CA39ED00155572 /* RuntimeStudyViewController.h */,
-				C9631E9D25CA39ED00155572 /* RuntimeStudyViewController.m */,
 				C9631E9F25CA703500155572 /* Game.h */,
 				C9631EA025CA703500155572 /* Game.m */,
 			);
@@ -715,12 +748,50 @@
 			path = Swift;
 			sourceTree = "<group>";
 		};
+		C971539025CB8D1200B911A1 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				C971538D25CB7DBF00B911A1 /* NSObject+RuntimeModel.h */,
+				C971538E25CB7DBF00B911A1 /* NSObject+RuntimeModel.m */,
+				C9631E9C25CA39ED00155572 /* RuntimeStudyViewController.h */,
+				C9631E9D25CA39ED00155572 /* RuntimeStudyViewController.m */,
+				C971538A25CB7CFC00B911A1 /* RuntimeModel.h */,
+				C971538B25CB7CFC00B911A1 /* RuntimeModel.m */,
+				C971539125CB8D5C00B911A1 /* RuntimeStudent.h */,
+				C971539225CB8D5C00B911A1 /* RuntimeStudent.m */,
+				C971539425CB8D7000B911A1 /* RuntimePerson.h */,
+				C971539525CB8D7000B911A1 /* RuntimePerson.m */,
+				C971539725CB8EA400B911A1 /* RuntimeStudent+Zh.h */,
+				C971539825CB8EA400B911A1 /* RuntimeStudent+Zh.m */,
+				C971539A25CBD10300B911A1 /* UIViewController+BuryingPoint.h */,
+				C971539B25CBD10300B911A1 /* UIViewController+BuryingPoint.m */,
+				C97153A025CBE1EC00B911A1 /* NSArray+BurryPoint.h */,
+				C97153A125CBE1EC00B911A1 /* NSArray+BurryPoint.m */,
+				C97D2B0125CD44B60010F674 /* UIControl+ZHRepeatClick.h */,
+				C97D2B0225CD44B60010F674 /* UIControl+ZHRepeatClick.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
 		C97CFAC963FEC2DE57510DB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				4068FD23A5AE634EB8F4E6CD /* Pods_PatientApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C97D2AF725CD17320010F674 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C97D2AF825CD1A240010F674 /* ZHPerson.h */,
+				C97D2AF925CD1A240010F674 /* ZHPerson.m */,
+				C97D2AFB25CD1B070010F674 /* ZHPerson+Sport.h */,
+				C97D2AFC25CD1B070010F674 /* ZHPerson+Sport.m */,
+				C97D2AFE25CD1C7C0010F674 /* ZHPerson+Eat.h */,
+				C97D2AFF25CD1C7C0010F674 /* ZHPerson+Eat.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -905,12 +976,15 @@
 				C936E42925B03EC20086E73B /* DataModel.swift in Sources */,
 				0467B0C8253546B30004ABBB /* NSData+HSData.m in Sources */,
 				042B838025343B380069A40A /* AppDelegate+PatientUI.m in Sources */,
+				C971539925CB8EA400B911A1 /* RuntimeStudent+Zh.m in Sources */,
 				044DC895253E703800EA1A35 /* PLFindPassWordRootView.m in Sources */,
 				04544A602536DC69007F739F /* MyPageMainViewModel.m in Sources */,
 				044DC8B1253E80F100EA1A35 /* PLAmendPassWordViewModel.m in Sources */,
 				045A14C62538452100504F25 /* PLRegisterInputCodeView.m in Sources */,
 				044C5F0B25357A610058FC6A /* PLMyPageTopPartView.m in Sources */,
+				C97D2B0025CD1C7C0010F674 /* ZHPerson+Eat.m in Sources */,
 				044C5F05253577350058FC6A /* PLMyPageRootView.m in Sources */,
+				C97D2AFD25CD1B070010F674 /* ZHPerson+Sport.m in Sources */,
 				044DC8A8253E80BA00EA1A35 /* PLAmendPassWordRootView.m in Sources */,
 				C936E41B25AFD88F0086E73B /* MiddleListTableViewCell.swift in Sources */,
 				042B8391253442620069A40A /* PLTabbarController.m in Sources */,
@@ -926,6 +1000,7 @@
 				C966E35925C9401A0007A7D1 /* Person.m in Sources */,
 				042B83AD253446E70069A40A /* PLMyPageViewController.m in Sources */,
 				044C5F1125357ABD0058FC6A /* PLMyPageCenterGroupView.m in Sources */,
+				C97153A225CBE1EC00B911A1 /* NSArray+BurryPoint.m in Sources */,
 				C9631E9E25CA39ED00155572 /* RuntimeStudyViewController.m in Sources */,
 				C936E42125AFE4770086E73B /* MiddleDetailViewController.swift in Sources */,
 				C97DF1C225AAD0E2006CC96B /* SwiftVC.swift in Sources */,
@@ -937,11 +1012,15 @@
 				C936E41F25AFD94D0086E73B /* ConstantsHeader.swift in Sources */,
 				042B8397253443510069A40A /* UIColor+JSColor.m in Sources */,
 				045AECC32539374100757813 /* PLCommonNetworkUrlConstant.m in Sources */,
+				C97D2AFA25CD1A240010F674 /* ZHPerson.m in Sources */,
 				045A14D625385BA100504F25 /* HSHud.m in Sources */,
+				C971539625CB8D7000B911A1 /* RuntimePerson.m in Sources */,
 				045A14C02538287500504F25 /* PLRegisterRootView.m in Sources */,
 				C936E42B25B0402F0086E73B /* CompleteDataModel.swift in Sources */,
 				044DC89E253E709000EA1A35 /* PLFindPassWordViewModel.m in Sources */,
+				C971538C25CB7CFC00B911A1 /* RuntimeModel.m in Sources */,
 				0467B0E1253556A80004ABBB /* PLLoginRootView.m in Sources */,
+				C971538F25CB7DBF00B911A1 /* NSObject+RuntimeModel.m in Sources */,
 				C9631EA125CA703500155572 /* Game.m in Sources */,
 				0453F3B5253D6E3300B32F46 /* PLUserInfoConstantKey.m in Sources */,
 				045A14A82537E66100504F25 /* PLLoginInputIdentityNumberTextField.m in Sources */,
@@ -950,6 +1029,7 @@
 				042B83B3253447020069A40A /* PLMessageViewController.m in Sources */,
 				C966E35625C929920007A7D1 /* CopyStudyViewController.m in Sources */,
 				04544A3A25369D12007F739F /* PLRoundedBoardView.m in Sources */,
+				C97D2B0325CD44B60010F674 /* UIControl+ZHRepeatClick.m in Sources */,
 				0421044025359876008AC002 /* PLMyPageSingleSelectionView.m in Sources */,
 				045A14AE2537F05E00504F25 /* PLLoginInputPasswordTextFieldView.m in Sources */,
 				0467B0BC253543780004ABBB /* UIViewExt.m in Sources */,
@@ -961,7 +1041,9 @@
 				04544A402536A39C007F739F /* PLCommonCornerButtonView.m in Sources */,
 				042B83B9253447200069A40A /* PLServiceViewController.m in Sources */,
 				04544A6F2536FC5B007F739F /* UIFont+JSFont.m in Sources */,
+				C971539C25CBD10300B911A1 /* UIViewController+BuryingPoint.m in Sources */,
 				04D833DF253162EF00FCD4D5 /* main.m in Sources */,
+				C971539325CB8D5C00B911A1 /* RuntimeStudent.m in Sources */,
 				C936E42725AFED8C0086E73B /* StringExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
