@@ -19,6 +19,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否忽略点击 不响应点击事件
 @property (nonatomic,assign) BOOL zh_ignoreEvent;
 
+//移除UIControl_acceptEventInterval关联对象
+- (void)removeAssociateZh_acceptEventInterval;
+
+- (void)removeAssociateZh_ignoreEvent;
+
 @end
 
 NS_ASSUME_NONNULL_END

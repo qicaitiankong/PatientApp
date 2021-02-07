@@ -12,8 +12,13 @@
 
 @implementation ZHPerson (Sport)
 
++(void)load{
+    NSLog(@"%s",__func__);
+}
 
-
++(void)initialize{
+    NSLog(@"%s",__func__);
+}
 
 
 

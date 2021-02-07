@@ -16,38 +16,37 @@
     不可变数组元素个数为1 =__NSSingleObjectArrayI
     可变数组: __NSArrayM
     */
+
+
 + (void)load{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        NSLog(@"数组防止奔溃埋点");
-        //交换 不可变数组（元素个数大于1）
-        Method m1 = class_getInstanceMethod(objc_getClass("__NSArrayI"), @selector(objectAtIndex:));
-        Method m2 = class_getInstanceMethod(objc_getClass("__NSArrayI"), @selector(hook_NSArrayI_objectAtIndex:));
-        method_exchangeImplementations(m1, m2);
-        //下标取值时
-        Method m3 = class_getInstanceMethod(objc_getClass("__NSArrayI"), @selector(objectAtIndexedSubscript:));
-        Method m4 = class_getInstanceMethod(objc_getClass("__NSArrayI"), @selector(hook_NSArrayI_objectAtIndexedSubscript:));
-        method_exchangeImplementations(m3, m4);
-        //不可变数组元素个数为0
-        Method m5 = class_getInstanceMethod(objc_getClass("__NSArray0"), @selector(objectAtIndex:));
-        Method m6 = class_getInstanceMethod(objc_getClass("__NSArray0"), @selector(hook_NSArray0_objectAtIndex:));
-        method_exchangeImplementations(m5, m6);
-        //不可变数组元素个数为1
-        Method m9 = class_getInstanceMethod(objc_getClass("__NSSingleObjectArrayI"), @selector(objectAtIndex:));
-        Method m10 = class_getInstanceMethod(objc_getClass("__NSSingleObjectArrayI"), @selector(hook_NSSingleObjectArrayI_objectAtIndex:));
-        method_exchangeImplementations(m9, m10);
-        Method m11 = class_getInstanceMethod(objc_getClass("__NSSingleObjectArrayI"), @selector(objectAtIndexedSubscript:));
-        Method m12 = class_getInstanceMethod(objc_getClass("__NSSingleObjectArrayI"), @selector(hook_NSSingleObjectArrayI_objectAtIndexedSubscript:));
-        method_exchangeImplementations(m11, m12);
-        //可变数组
-        Method m13 = class_getInstanceMethod(objc_getClass("__NSArrayM"), @selector(objectAtIndex:));
-        Method m14 = class_getInstanceMethod(objc_getClass("__NSArrayM"), @selector(hook_NSArrayM_objectAtIndex:));
-        method_exchangeImplementations(m13, m14);
-        Method m15 = class_getInstanceMethod(objc_getClass("__NSArrayM"), @selector(objectAtIndexedSubscript:));
-        Method m16 = class_getInstanceMethod(objc_getClass("__NSArrayM"), @selector(hook_NSArrayM_objectAtIndexedSubscript:));
-        method_exchangeImplementations(m15, m16);
-        
-    });
+               NSLog(@"数组防止奔溃埋点");
+               //交换 不可变数组（元素个数大于1）
+               Method m1 = class_getInstanceMethod(objc_getClass("__NSArrayI"), @selector(objectAtIndex:));
+               Method m2 = class_getInstanceMethod(objc_getClass("__NSArrayI"), @selector(hook_NSArrayI_objectAtIndex:));
+               method_exchangeImplementations(m1, m2);
+               //下标取值时
+               Method m3 = class_getInstanceMethod(objc_getClass("__NSArrayI"), @selector(objectAtIndexedSubscript:));
+               Method m4 = class_getInstanceMethod(objc_getClass("__NSArrayI"), @selector(hook_NSArrayI_objectAtIndexedSubscript:));
+               method_exchangeImplementations(m3, m4);
+               //不可变数组元素个数为0
+               Method m5 = class_getInstanceMethod(objc_getClass("__NSArray0"), @selector(objectAtIndex:));
+               Method m6 = class_getInstanceMethod(objc_getClass("__NSArray0"), @selector(hook_NSArray0_objectAtIndex:));
+               method_exchangeImplementations(m5, m6);
+               //不可变数组元素个数为1
+               Method m9 = class_getInstanceMethod(objc_getClass("__NSSingleObjectArrayI"), @selector(objectAtIndex:));
+               Method m10 = class_getInstanceMethod(objc_getClass("__NSSingleObjectArrayI"), @selector(hook_NSSingleObjectArrayI_objectAtIndex:));
+               method_exchangeImplementations(m9, m10);
+               Method m11 = class_getInstanceMethod(objc_getClass("__NSSingleObjectArrayI"), @selector(objectAtIndexedSubscript:));
+               Method m12 = class_getInstanceMethod(objc_getClass("__NSSingleObjectArrayI"), @selector(hook_NSSingleObjectArrayI_objectAtIndexedSubscript:));
+               method_exchangeImplementations(m11, m12);
+               //可变数组
+               Method m13 = class_getInstanceMethod(objc_getClass("__NSArrayM"), @selector(objectAtIndex:));
+               Method m14 = class_getInstanceMethod(objc_getClass("__NSArrayM"), @selector(hook_NSArrayM_objectAtIndex:));
+               method_exchangeImplementations(m13, m14);
+               Method m15 = class_getInstanceMethod(objc_getClass("__NSArrayM"), @selector(objectAtIndexedSubscript:));
+               Method m16 = class_getInstanceMethod(objc_getClass("__NSArrayM"), @selector(hook_NSArrayM_objectAtIndexedSubscript:));
+               method_exchangeImplementations(m15, m16);
+
 }
 
 - (id)hook_NSArrayI_objectAtIndex:(NSUInteger)index

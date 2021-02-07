@@ -12,8 +12,6 @@
 
 +(void)load
 {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
         //hook_viewWillAppear:去代替原view willAppear 执行
         Method m1 = class_getInstanceMethod([self class], @selector(viewWillAppear:));
         Method m2 = class_getInstanceMethod([self class], @selector(hook_viewWillAppear:));
@@ -23,8 +21,6 @@
         Method m4 = class_getInstanceMethod([self class], @selector(hook_viewWillDisappear:));
         method_exchangeImplementations(m3, m4);
         
-        
-    });
 }
 
 - (void)hook_viewWillAppear:(BOOL)animated

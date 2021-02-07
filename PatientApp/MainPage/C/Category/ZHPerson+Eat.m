@@ -9,6 +9,15 @@
 
 @implementation ZHPerson (Eat)
 
++(void)load{
+    NSLog(@"%s",__func__);
+}
+
++(void)initialize{
+    NSLog(@"%s",__func__);
+}
+
+
 + (void)eat{
     NSLog(@"ZHPerson+Eat + (void)eat");
 }

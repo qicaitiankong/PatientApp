@@ -12,6 +12,8 @@
 #import "CopyStudyViewController.h"
 #import "RuntimeStudyViewController.h"
 #import "UIControl+ZHRepeatClick.h"
+#import "GCDTestViewController.h"
+
 
 const NSInteger singleViewHeight = 50;
 
@@ -77,6 +79,26 @@ const NSInteger singleViewHeight = 50;
         make.height.mas_equalTo(singleViewHeight);
         make.width.height.mas_equalTo(100);
     }];
+    
+    //
+    
+    UIButton *centenbutton5 = [UIButton buttonWithType:UIButtonTypeCustom];
+       centenbutton5.backgroundColor = UIColor.grayColor;
+       [centenbutton5 setTitle:@"gcd队列组" forState:UIControlStateNormal];
+       [self.view addSubview:centenbutton5];
+       [centenbutton5 addTarget:self action:@selector(GCDTest) forControlEvents:UIControlEventTouchUpInside];
+       [centenbutton5 mas_makeConstraints:^(MASConstraintMaker *make) {
+           make.left.mas_equalTo(20);
+           make.top.mas_equalTo(centenbutton4.mas_bottom).mas_offset(10);
+           make.height.mas_equalTo(singleViewHeight);
+           make.width.height.mas_equalTo(100);
+       }];
+}
+
+- (void)GCDTest{
+    GCDTestViewController *gcdVC = [[GCDTestViewController alloc]init];
+    gcdVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:gcdVC animated:YES];
 }
 
 - (void)runtimeStudy{
@@ -98,9 +120,10 @@ const NSInteger singleViewHeight = 50;
 }
 
 - (void)clickButton{
-    SwiftVC *vc = [[SwiftVC alloc]init];
-    vc.hidesBottomBarWhenPushed = true;
-    [self.navigationController pushViewController:vc animated:YES];
+    NSLog(@"跳转swift");
+//    SwiftVC *vc = [[SwiftVC alloc]init];
+//    vc.hidesBottomBarWhenPushed = true;
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

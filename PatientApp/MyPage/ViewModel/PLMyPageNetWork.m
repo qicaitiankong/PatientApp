@@ -93,4 +93,25 @@
 }
 
 
++(void)testRequest:(NSDictionary *)paraDict withBlock:(void(^)(id response))suc withErrorBlock:(void(^)(id response))error{
+    NSString *urlStr = @"http://47.104.255.147:8089/SMBMS/marry/myCollects";
+    //[HSHud showLoading];
+    [PLNetWorkManager postRequestWithUrlString:urlStr parameters:paraDict resultBlock:^(id responseObject)
+    {
+        //[HSHud dismissHud];
+        if (responseObject)
+        {
+            suc(responseObject);
+        }
+    } errorBlock:^(id responseObject)
+    {
+       // [HSHud dismissHud];
+        if (responseObject)
+        {
+            error(responseObject);
+        }
+    }];
+}
+
+
 @end

@@ -90,6 +90,10 @@
 		C97D2B0025CD1C7C0010F674 /* ZHPerson+Eat.m in Sources */ = {isa = PBXBuildFile; fileRef = C97D2AFF25CD1C7C0010F674 /* ZHPerson+Eat.m */; };
 		C97D2B0325CD44B60010F674 /* UIControl+ZHRepeatClick.m in Sources */ = {isa = PBXBuildFile; fileRef = C97D2B0225CD44B60010F674 /* UIControl+ZHRepeatClick.m */; };
 		C97DF1C225AAD0E2006CC96B /* SwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */; };
+		C9AFE34025CFB1F300A622B3 /* GCDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AFE33F25CFB1F300A622B3 /* GCDTestViewController.m */; };
+		C9DFE0FE25CE70CB00831A34 /* ZHStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE0FD25CE70CB00831A34 /* ZHStudent.m */; };
+		C9DFE10125CE713600831A34 /* ZHStudent+Study.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE10025CE713600831A34 /* ZHStudent+Study.m */; };
+		C9DFE10425CE86FA00831A34 /* ZHDog.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE10325CE86FA00831A34 /* ZHDog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -271,6 +275,14 @@
 		C97D2B0225CD44B60010F674 /* UIControl+ZHRepeatClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ZHRepeatClick.m"; sourceTree = "<group>"; };
 		C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftVC.swift; sourceTree = "<group>"; };
 		C9860BC425A99AF500053599 /* PatientApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PatientApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		C9AFE33E25CFB1F300A622B3 /* GCDTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTestViewController.h; sourceTree = "<group>"; };
+		C9AFE33F25CFB1F300A622B3 /* GCDTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTestViewController.m; sourceTree = "<group>"; };
+		C9DFE0FC25CE70CB00831A34 /* ZHStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHStudent.h; sourceTree = "<group>"; };
+		C9DFE0FD25CE70CB00831A34 /* ZHStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHStudent.m; sourceTree = "<group>"; };
+		C9DFE0FF25CE713600831A34 /* ZHStudent+Study.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZHStudent+Study.h"; sourceTree = "<group>"; };
+		C9DFE10025CE713600831A34 /* ZHStudent+Study.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZHStudent+Study.m"; sourceTree = "<group>"; };
+		C9DFE10225CE86FA00831A34 /* ZHDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHDog.h; sourceTree = "<group>"; };
+		C9DFE10325CE86FA00831A34 /* ZHDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHDog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -466,6 +478,8 @@
 				C966E35825C9401A0007A7D1 /* Person.m */,
 				C9631E9F25CA703500155572 /* Game.h */,
 				C9631EA025CA703500155572 /* Game.m */,
+				C9AFE33E25CFB1F300A622B3 /* GCDTestViewController.h */,
+				C9AFE33F25CFB1F300A622B3 /* GCDTestViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -790,6 +804,12 @@
 				C97D2AFC25CD1B070010F674 /* ZHPerson+Sport.m */,
 				C97D2AFE25CD1C7C0010F674 /* ZHPerson+Eat.h */,
 				C97D2AFF25CD1C7C0010F674 /* ZHPerson+Eat.m */,
+				C9DFE0FC25CE70CB00831A34 /* ZHStudent.h */,
+				C9DFE0FD25CE70CB00831A34 /* ZHStudent.m */,
+				C9DFE0FF25CE713600831A34 /* ZHStudent+Study.h */,
+				C9DFE10025CE713600831A34 /* ZHStudent+Study.m */,
+				C9DFE10225CE86FA00831A34 /* ZHDog.h */,
+				C9DFE10325CE86FA00831A34 /* ZHDog.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -981,10 +1001,15 @@
 				04544A602536DC69007F739F /* MyPageMainViewModel.m in Sources */,
 				044DC8B1253E80F100EA1A35 /* PLAmendPassWordViewModel.m in Sources */,
 				045A14C62538452100504F25 /* PLRegisterInputCodeView.m in Sources */,
+				C9AFE34025CFB1F300A622B3 /* GCDTestViewController.m in Sources */,
 				044C5F0B25357A610058FC6A /* PLMyPageTopPartView.m in Sources */,
+				C9DFE0FE25CE70CB00831A34 /* ZHStudent.m in Sources */,
+				C97D2AFA25CD1A240010F674 /* ZHPerson.m in Sources */,
 				C97D2B0025CD1C7C0010F674 /* ZHPerson+Eat.m in Sources */,
-				044C5F05253577350058FC6A /* PLMyPageRootView.m in Sources */,
+				C9DFE10125CE713600831A34 /* ZHStudent+Study.m in Sources */,
 				C97D2AFD25CD1B070010F674 /* ZHPerson+Sport.m in Sources */,
+				C9DFE10425CE86FA00831A34 /* ZHDog.m in Sources */,
+				044C5F05253577350058FC6A /* PLMyPageRootView.m in Sources */,
 				044DC8A8253E80BA00EA1A35 /* PLAmendPassWordRootView.m in Sources */,
 				C936E41B25AFD88F0086E73B /* MiddleListTableViewCell.swift in Sources */,
 				042B8391253442620069A40A /* PLTabbarController.m in Sources */,
@@ -1012,7 +1037,6 @@
 				C936E41F25AFD94D0086E73B /* ConstantsHeader.swift in Sources */,
 				042B8397253443510069A40A /* UIColor+JSColor.m in Sources */,
 				045AECC32539374100757813 /* PLCommonNetworkUrlConstant.m in Sources */,
-				C97D2AFA25CD1A240010F674 /* ZHPerson.m in Sources */,
 				045A14D625385BA100504F25 /* HSHud.m in Sources */,
 				C971539625CB8D7000B911A1 /* RuntimePerson.m in Sources */,
 				045A14C02538287500504F25 /* PLRegisterRootView.m in Sources */,

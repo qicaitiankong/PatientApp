@@ -15,6 +15,12 @@
 #import "NSArray+BurryPoint.h"
 #import "ZHPerson.h"
 #import "ZHPerson+Sport.h"
+#import "ZHPerson+Eat.h"
+#import "ZHStudent.h"
+#import "ZHStudent+Study.h"
+#import "ZHDog.h"
+
+
 @interface RuntimeStudyViewController ()
 {
     NSInteger num;
@@ -61,10 +67,13 @@
 //
 //    NSLog(@"%@ %@ %@ %@ %@ %@",strArr[6],[arr2 objectAtIndex:1],arr2[7],[strArr objectAtIndex:5],arr3[6],[arr4 objectAtIndex:4]);
     //分类探讨
+    //[ZHPerson class];
     ZHPerson *person = [[ZHPerson alloc]init];
-    person.stepCount = 12;
-    person.startTime = @"开始时间";
-    NSLog(@"%ld。%@",person.stepCount, person.startTime);
+    ZHStudent *student = [[ZHStudent alloc]init];
+    ZHDog *dog = [[ZHDog alloc]init];
+    
+    
+    
     
 }
 

@@ -26,6 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(void)amendPassWordRequest:(NSDictionary *)paraDict withBlock:(void(^)(id response))suc withErrorBlock:(void(^)(id response))error;
 
+
++(void)testRequest:(NSDictionary *)paraDict withBlock:(void(^)(id response))suc withErrorBlock:(void(^)(id response))error;
+
 @end
 
 NS_ASSUME_NONNULL_END

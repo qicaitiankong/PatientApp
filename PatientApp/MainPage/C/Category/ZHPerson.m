@@ -9,6 +9,15 @@
 
 @implementation ZHPerson
 
++(void)load{
+    NSLog(@"%s",__func__);
+}
+
++(void)initialize{
+    NSLog(@"%s",__func__);
+}
+
+
 - (void)life{
     NSLog(@"ZHPerson:-(void)life");
 }
