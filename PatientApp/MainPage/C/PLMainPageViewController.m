@@ -13,7 +13,7 @@
 #import "RuntimeStudyViewController.h"
 #import "UIControl+ZHRepeatClick.h"
 #import "GCDTestViewController.h"
-
+#import "H5TestViewController.h"
 
 const NSInteger singleViewHeight = 50;
 
@@ -93,7 +93,28 @@ const NSInteger singleViewHeight = 50;
            make.height.mas_equalTo(singleViewHeight);
            make.width.height.mas_equalTo(100);
        }];
+    
+    //
+    UIButton *centenbutton6 = [UIButton buttonWithType:UIButtonTypeCustom];
+          centenbutton6.backgroundColor = UIColor.grayColor;
+          [centenbutton6 setTitle:@"oc 与h5交互" forState:UIControlStateNormal];
+          [self.view addSubview:centenbutton6];
+          [centenbutton6 addTarget:self action:@selector(h5Test) forControlEvents:UIControlEventTouchUpInside];
+          [centenbutton6 mas_makeConstraints:^(MASConstraintMaker *make) {
+              make.left.mas_equalTo(20);
+              make.top.mas_equalTo(centenbutton5.mas_bottom).mas_offset(10);
+              make.height.mas_equalTo(singleViewHeight);
+              make.width.height.mas_equalTo(100);
+          }];
 }
+
+- (void)h5Test{
+    H5TestViewController *h5VC = [[H5TestViewController alloc]init];
+    h5VC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:h5VC animated:YES];
+    
+}
+
 
 - (void)GCDTest{
     GCDTestViewController *gcdVC = [[GCDTestViewController alloc]init];
