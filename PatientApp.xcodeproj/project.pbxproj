@@ -90,6 +90,7 @@
 		C9740C9E25D0BB21009E9D09 /* File.js in Resources */ = {isa = PBXBuildFile; fileRef = C9740C9D25D0BB21009E9D09 /* File.js */; };
 		C9740CA025D0BB42009E9D09 /* File.css in Resources */ = {isa = PBXBuildFile; fileRef = C9740C9F25D0BB42009E9D09 /* File.css */; };
 		C9740CA325D0BB91009E9D09 /* CustomJSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C9740CA225D0BB91009E9D09 /* CustomJSObject.m */; };
+		C976687425D612CE00C6E33C /* LockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C976687325D612CE00C6E33C /* LockTestViewController.m */; };
 		C97D2AFA25CD1A240010F674 /* ZHPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C97D2AF925CD1A240010F674 /* ZHPerson.m */; };
 		C97D2AFD25CD1B070010F674 /* ZHPerson+Sport.m in Sources */ = {isa = PBXBuildFile; fileRef = C97D2AFC25CD1B070010F674 /* ZHPerson+Sport.m */; };
 		C97D2B0025CD1C7C0010F674 /* ZHPerson+Eat.m in Sources */ = {isa = PBXBuildFile; fileRef = C97D2AFF25CD1C7C0010F674 /* ZHPerson+Eat.m */; };
@@ -277,6 +278,8 @@
 		C9740C9F25D0BB42009E9D09 /* File.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = File.css; sourceTree = "<group>"; };
 		C9740CA125D0BB91009E9D09 /* CustomJSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomJSObject.h; sourceTree = "<group>"; };
 		C9740CA225D0BB91009E9D09 /* CustomJSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomJSObject.m; sourceTree = "<group>"; };
+		C976687225D612CE00C6E33C /* LockTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockTestViewController.h; sourceTree = "<group>"; };
+		C976687325D612CE00C6E33C /* LockTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockTestViewController.m; sourceTree = "<group>"; };
 		C97D2AF825CD1A240010F674 /* ZHPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHPerson.h; sourceTree = "<group>"; };
 		C97D2AF925CD1A240010F674 /* ZHPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHPerson.m; sourceTree = "<group>"; };
 		C97D2AFB25CD1B070010F674 /* ZHPerson+Sport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZHPerson+Sport.h"; sourceTree = "<group>"; };
@@ -495,6 +498,8 @@
 				C9AFE33F25CFB1F300A622B3 /* GCDTestViewController.m */,
 				C9740C9725D0B876009E9D09 /* H5TestViewController.h */,
 				C9740C9825D0B876009E9D09 /* H5TestViewController.m */,
+				C976687225D612CE00C6E33C /* LockTestViewController.h */,
+				C976687325D612CE00C6E33C /* LockTestViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -1057,6 +1062,7 @@
 				042B83AD253446E70069A40A /* PLMyPageViewController.m in Sources */,
 				044C5F1125357ABD0058FC6A /* PLMyPageCenterGroupView.m in Sources */,
 				C97153A225CBE1EC00B911A1 /* NSArray+BurryPoint.m in Sources */,
+				C976687425D612CE00C6E33C /* LockTestViewController.m in Sources */,
 				C9631E9E25CA39ED00155572 /* RuntimeStudyViewController.m in Sources */,
 				C936E42125AFE4770086E73B /* MiddleDetailViewController.swift in Sources */,
 				C97DF1C225AAD0E2006CC96B /* SwiftVC.swift in Sources */,

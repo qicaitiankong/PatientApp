@@ -14,6 +14,7 @@
 #import "UIControl+ZHRepeatClick.h"
 #import "GCDTestViewController.h"
 #import "H5TestViewController.h"
+#import "LockTestViewController.h"
 
 const NSInteger singleViewHeight = 50;
 
@@ -40,7 +41,7 @@ const NSInteger singleViewHeight = 50;
         make.left.mas_equalTo(20);
         make.top.mas_equalTo(IPHONE_NAVIGATIONBAR_HEIGHT);
         make.height.mas_equalTo(singleViewHeight);
-        make.width.height.mas_equalTo(100);
+        make.width.mas_equalTo(100);
     }];
     //block 原理探讨
     UIButton *centenbutton2 = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -52,7 +53,7 @@ const NSInteger singleViewHeight = 50;
            make.left.mas_equalTo(20);
            make.top.mas_equalTo(centenbutton.mas_bottom).mas_offset(10);
            make.height.mas_equalTo(singleViewHeight);
-           make.width.height.mas_equalTo(100);
+           make.width.mas_equalTo(100);
        }];
     //浅拷贝深拷贝
     UIButton *centenbutton3 = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -64,7 +65,7 @@ const NSInteger singleViewHeight = 50;
         make.left.mas_equalTo(20);
         make.top.mas_equalTo(centenbutton2.mas_bottom).mas_offset(10);
         make.height.mas_equalTo(singleViewHeight);
-        make.width.height.mas_equalTo(100);
+        make.width.mas_equalTo(100);
     }];
     
     //
@@ -77,7 +78,7 @@ const NSInteger singleViewHeight = 50;
         make.left.mas_equalTo(20);
         make.top.mas_equalTo(centenbutton3.mas_bottom).mas_offset(10);
         make.height.mas_equalTo(singleViewHeight);
-        make.width.height.mas_equalTo(100);
+        make.width.mas_equalTo(100);
     }];
     
     //
@@ -91,7 +92,7 @@ const NSInteger singleViewHeight = 50;
            make.left.mas_equalTo(20);
            make.top.mas_equalTo(centenbutton4.mas_bottom).mas_offset(10);
            make.height.mas_equalTo(singleViewHeight);
-           make.width.height.mas_equalTo(100);
+           make.width.mas_equalTo(100);
        }];
     
     //
@@ -104,8 +105,26 @@ const NSInteger singleViewHeight = 50;
               make.left.mas_equalTo(20);
               make.top.mas_equalTo(centenbutton5.mas_bottom).mas_offset(10);
               make.height.mas_equalTo(singleViewHeight);
-              make.width.height.mas_equalTo(100);
+              make.width.mas_equalTo(100);
           }];
+    
+    UIButton *centenbutton7 = [UIButton buttonWithType:UIButtonTypeCustom];
+             centenbutton7.backgroundColor = UIColor.grayColor;
+             [centenbutton7 setTitle:@"锁测试" forState:UIControlStateNormal];
+             [self.view addSubview:centenbutton7];
+             [centenbutton7 addTarget:self action:@selector(lockTest) forControlEvents:UIControlEventTouchUpInside];
+             [centenbutton7 mas_makeConstraints:^(MASConstraintMaker *make) {
+                 make.left.mas_equalTo(20);
+                 make.top.mas_equalTo(centenbutton6.mas_bottom).mas_offset(10);
+                 make.height.mas_equalTo(singleViewHeight);
+                 make.width.mas_equalTo(100);
+             }];
+}
+
+- (void)lockTest{
+    LockTestViewController *lockVC = [[LockTestViewController alloc]init];
+     lockVC.hidesBottomBarWhenPushed = YES;
+      [self.navigationController pushViewController:lockVC animated:YES];
 }
 
 - (void)h5Test{

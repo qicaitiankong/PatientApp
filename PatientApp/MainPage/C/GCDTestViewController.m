@@ -21,10 +21,10 @@
      let urlString = "http://47.104.255.147:8089/SMBMS/marry/myCollects"
             let param = ListDataRequestParam(userId: 162, page: page, type: 1)
      */
-    
     dispatch_group_t group = dispatch_group_create();
-    dispatch_semaphore_t semaphere = dispatch_semaphore_create(0);
+    dispatch_semaphore_t semaphere = dispatch_semaphore_create(1);
     dispatch_group_async(group, dispatch_get_global_queue(0, 0), ^{
+        dispatch_semaphore_wait(semaphere, DISPATCH_TIME_FOREVER);
         NSLog(@"01开始执行");
             [PLMyPageNetWork testRequest:@{@"userId":@162,@"page":@1,@"type":@1} withBlock:^(id  _Nonnull response) {
                 NSLog(@"\n\n -----01 complete -------\n\n");
@@ -55,7 +55,6 @@
     });
     
     dispatch_group_notify(group, dispatch_get_global_queue(0, 0), ^{
-        dispatch_semaphore_wait(semaphere, DISPATCH_TIME_FOREVER);
         NSLog(@"group_notify 通知");
         
     });
