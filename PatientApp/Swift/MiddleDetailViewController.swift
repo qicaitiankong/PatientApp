@@ -13,7 +13,6 @@ protocol MakeDetailPageWorkSomethingProtocol:AnyObject{
     //协议中的属性必须指定可读或可读可写
     var num: Int{get}
     var num2: String{get set}
-    
     func giveValue()
        
 }
@@ -56,12 +55,20 @@ class MiddleDetailViewController: UIViewController{
 //        }
         
         //闭包方式
-        if let refreshClosure = refreshPageListClosure
-        {
-            self.navigationController?.popViewController(animated: true)
-            //调用闭包函数
-            refreshClosure()
+//        if let refreshClosure = refreshPageListClosure
+//        {
+//            self.navigationController?.popViewController(animated: true)
+//            //调用闭包函数
+//            refreshClosure()
+//        }
+        
+        //测试异步通知，得到 结果：通知接受者所执行的方法执行的线程是在 通知发送方所在的线程，所以异步通知执行的方法刷新UI 需要回到主线程
+        DispatchQueue.global().async {
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "refreshTable"), object: MiddleDetailViewController.self, userInfo: nil)
+
         }
+        
+        self.navigationController?.popViewController(animated: true)
     }
     
    

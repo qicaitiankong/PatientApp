@@ -16,6 +16,8 @@ class MiddleListTableViewCell: UITableViewCell {
     var nickNameLab: UILabel?
     var incomeLabe: UILabel?
     
+    
+    
     /// 界面赋值
     func setDataToView() {
        

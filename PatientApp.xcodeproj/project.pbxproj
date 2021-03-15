@@ -75,8 +75,15 @@
 		C936E42B25B0402F0086E73B /* CompleteDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C936E42A25B0402F0086E73B /* CompleteDataModel.swift */; };
 		C9631E9E25CA39ED00155572 /* RuntimeStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9631E9D25CA39ED00155572 /* RuntimeStudyViewController.m */; };
 		C9631EA125CA703500155572 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = C9631EA025CA703500155572 /* Game.m */; };
+		C964E6A125FF40410015A86E /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C964E6A025FF40410015A86E /* NSTimerViewController.m */; };
+		C964E6A425FF4A9C0015A86E /* ZHProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C964E6A325FF4A9C0015A86E /* ZHProxy.m */; };
 		C966E35625C929920007A7D1 /* CopyStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C966E35525C929920007A7D1 /* CopyStudyViewController.m */; };
 		C966E35925C9401A0007A7D1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C966E35825C9401A0007A7D1 /* Person.m */; };
+		C96BB20225D8ED9D00031137 /* SetNeedsLayoutTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96BB20125D8ED9D00031137 /* SetNeedsLayoutTestViewController.m */; };
+		C96BB20525D8F3C600031137 /* LaoutNeedTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = C96BB20425D8F3C600031137 /* LaoutNeedTestView.m */; };
+		C96BB20825D908F500031137 /* KVCKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96BB20725D908F500031137 /* KVCKVOViewController.m */; };
+		C96BB20B25D90A8700031137 /* KvckvoPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C96BB20A25D90A8700031137 /* KvckvoPerson.m */; };
+		C96BB20E25D90C6F00031137 /* KvcKvoDog.m in Sources */ = {isa = PBXBuildFile; fileRef = C96BB20D25D90C6F00031137 /* KvcKvoDog.m */; };
 		C96CCB2125C7EEAD00405DDC /* BlockStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96CCB2025C7EEAD00405DDC /* BlockStudyViewController.m */; };
 		C971538C25CB7CFC00B911A1 /* RuntimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C971538B25CB7CFC00B911A1 /* RuntimeModel.m */; };
 		C971538F25CB7DBF00B911A1 /* NSObject+RuntimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C971538E25CB7DBF00B911A1 /* NSObject+RuntimeModel.m */; };
@@ -96,7 +103,9 @@
 		C97D2B0025CD1C7C0010F674 /* ZHPerson+Eat.m in Sources */ = {isa = PBXBuildFile; fileRef = C97D2AFF25CD1C7C0010F674 /* ZHPerson+Eat.m */; };
 		C97D2B0325CD44B60010F674 /* UIControl+ZHRepeatClick.m in Sources */ = {isa = PBXBuildFile; fileRef = C97D2B0225CD44B60010F674 /* UIControl+ZHRepeatClick.m */; };
 		C97DF1C225AAD0E2006CC96B /* SwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */; };
+		C989209D25F5EA3C00C4F3FE /* NSString+ZHString.m in Sources */ = {isa = PBXBuildFile; fileRef = C989209C25F5EA3C00C4F3FE /* NSString+ZHString.m */; };
 		C9AFE34025CFB1F300A622B3 /* GCDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AFE33F25CFB1F300A622B3 /* GCDTestViewController.m */; };
+		C9DC1F5525DE4C1200126E02 /* BarrierNetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC1F5425DE4C1200126E02 /* BarrierNetViewController.m */; };
 		C9DFE0FE25CE70CB00831A34 /* ZHStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE0FD25CE70CB00831A34 /* ZHStudent.m */; };
 		C9DFE10125CE713600831A34 /* ZHStudent+Study.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE10025CE713600831A34 /* ZHStudent+Study.m */; };
 		C9DFE10425CE86FA00831A34 /* ZHDog.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE10325CE86FA00831A34 /* ZHDog.m */; };
@@ -251,10 +260,24 @@
 		C9631E9D25CA39ED00155572 /* RuntimeStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeStudyViewController.m; sourceTree = "<group>"; };
 		C9631E9F25CA703500155572 /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		C9631EA025CA703500155572 /* Game.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		C964E69F25FF40410015A86E /* NSTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
+		C964E6A025FF40410015A86E /* NSTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
+		C964E6A225FF4A9C0015A86E /* ZHProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHProxy.h; sourceTree = "<group>"; };
+		C964E6A325FF4A9C0015A86E /* ZHProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHProxy.m; sourceTree = "<group>"; };
 		C966E35425C929920007A7D1 /* CopyStudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyStudyViewController.h; sourceTree = "<group>"; };
 		C966E35525C929920007A7D1 /* CopyStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyStudyViewController.m; sourceTree = "<group>"; };
 		C966E35725C9401A0007A7D1 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		C966E35825C9401A0007A7D1 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		C96BB20025D8ED9D00031137 /* SetNeedsLayoutTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetNeedsLayoutTestViewController.h; sourceTree = "<group>"; };
+		C96BB20125D8ED9D00031137 /* SetNeedsLayoutTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetNeedsLayoutTestViewController.m; sourceTree = "<group>"; };
+		C96BB20325D8F3C600031137 /* LaoutNeedTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaoutNeedTestView.h; sourceTree = "<group>"; };
+		C96BB20425D8F3C600031137 /* LaoutNeedTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaoutNeedTestView.m; sourceTree = "<group>"; };
+		C96BB20625D908F500031137 /* KVCKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCKVOViewController.h; sourceTree = "<group>"; };
+		C96BB20725D908F500031137 /* KVCKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCKVOViewController.m; sourceTree = "<group>"; };
+		C96BB20925D90A8700031137 /* KvckvoPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KvckvoPerson.h; sourceTree = "<group>"; };
+		C96BB20A25D90A8700031137 /* KvckvoPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KvckvoPerson.m; sourceTree = "<group>"; };
+		C96BB20C25D90C6F00031137 /* KvcKvoDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KvcKvoDog.h; sourceTree = "<group>"; };
+		C96BB20D25D90C6F00031137 /* KvcKvoDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KvcKvoDog.m; sourceTree = "<group>"; };
 		C96CCB1F25C7EEAD00405DDC /* BlockStudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStudyViewController.h; sourceTree = "<group>"; };
 		C96CCB2025C7EEAD00405DDC /* BlockStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStudyViewController.m; sourceTree = "<group>"; };
 		C971538A25CB7CFC00B911A1 /* RuntimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeModel.h; sourceTree = "<group>"; };
@@ -290,8 +313,12 @@
 		C97D2B0225CD44B60010F674 /* UIControl+ZHRepeatClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ZHRepeatClick.m"; sourceTree = "<group>"; };
 		C97DF1C125AAD0E2006CC96B /* SwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftVC.swift; sourceTree = "<group>"; };
 		C9860BC425A99AF500053599 /* PatientApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PatientApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		C989209B25F5EA3C00C4F3FE /* NSString+ZHString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZHString.h"; sourceTree = "<group>"; };
+		C989209C25F5EA3C00C4F3FE /* NSString+ZHString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZHString.m"; sourceTree = "<group>"; };
 		C9AFE33E25CFB1F300A622B3 /* GCDTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTestViewController.h; sourceTree = "<group>"; };
 		C9AFE33F25CFB1F300A622B3 /* GCDTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTestViewController.m; sourceTree = "<group>"; };
+		C9DC1F5325DE4C1200126E02 /* BarrierNetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarrierNetViewController.h; sourceTree = "<group>"; };
+		C9DC1F5425DE4C1200126E02 /* BarrierNetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarrierNetViewController.m; sourceTree = "<group>"; };
 		C9DFE0FC25CE70CB00831A34 /* ZHStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHStudent.h; sourceTree = "<group>"; };
 		C9DFE0FD25CE70CB00831A34 /* ZHStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHStudent.m; sourceTree = "<group>"; };
 		C9DFE0FF25CE713600831A34 /* ZHStudent+Study.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZHStudent+Study.h"; sourceTree = "<group>"; };
@@ -500,6 +527,22 @@
 				C9740C9825D0B876009E9D09 /* H5TestViewController.m */,
 				C976687225D612CE00C6E33C /* LockTestViewController.h */,
 				C976687325D612CE00C6E33C /* LockTestViewController.m */,
+				C96BB20025D8ED9D00031137 /* SetNeedsLayoutTestViewController.h */,
+				C96BB20125D8ED9D00031137 /* SetNeedsLayoutTestViewController.m */,
+				C96BB20325D8F3C600031137 /* LaoutNeedTestView.h */,
+				C96BB20425D8F3C600031137 /* LaoutNeedTestView.m */,
+				C96BB20625D908F500031137 /* KVCKVOViewController.h */,
+				C96BB20725D908F500031137 /* KVCKVOViewController.m */,
+				C96BB20925D90A8700031137 /* KvckvoPerson.h */,
+				C96BB20A25D90A8700031137 /* KvckvoPerson.m */,
+				C96BB20C25D90C6F00031137 /* KvcKvoDog.h */,
+				C96BB20D25D90C6F00031137 /* KvcKvoDog.m */,
+				C9DC1F5325DE4C1200126E02 /* BarrierNetViewController.h */,
+				C9DC1F5425DE4C1200126E02 /* BarrierNetViewController.m */,
+				C964E69F25FF40410015A86E /* NSTimerViewController.h */,
+				C964E6A025FF40410015A86E /* NSTimerViewController.m */,
+				C964E6A225FF4A9C0015A86E /* ZHProxy.h */,
+				C964E6A325FF4A9C0015A86E /* ZHProxy.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -842,6 +885,8 @@
 				C9DFE10025CE713600831A34 /* ZHStudent+Study.m */,
 				C9DFE10225CE86FA00831A34 /* ZHDog.h */,
 				C9DFE10325CE86FA00831A34 /* ZHDog.m */,
+				C989209B25F5EA3C00C4F3FE /* NSString+ZHString.h */,
+				C989209C25F5EA3C00C4F3FE /* NSString+ZHString.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1026,10 +1071,12 @@
 				044DC88E253E6C4600EA1A35 /* PLFindPasswordViewController.m in Sources */,
 				C9740C9925D0B876009E9D09 /* H5TestViewController.m in Sources */,
 				042B83D4253451F80069A40A /* PLNetWorkManager.m in Sources */,
+				C964E6A425FF4A9C0015A86E /* ZHProxy.m in Sources */,
 				045AECD62539737200757813 /* NSDictionary+JSTDictionary.m in Sources */,
 				044C5F17253588B00058FC6A /* PLMyPageBaseScrollView.m in Sources */,
 				045A14B42537F8F000504F25 /* PLCanClickLabelWithBottomHorinzontalLine.m in Sources */,
 				C936E42925B03EC20086E73B /* DataModel.swift in Sources */,
+				C964E6A125FF40410015A86E /* NSTimerViewController.m in Sources */,
 				0467B0C8253546B30004ABBB /* NSData+HSData.m in Sources */,
 				042B838025343B380069A40A /* AppDelegate+PatientUI.m in Sources */,
 				C971539925CB8EA400B911A1 /* RuntimeStudent+Zh.m in Sources */,
@@ -1044,6 +1091,8 @@
 				C97D2B0025CD1C7C0010F674 /* ZHPerson+Eat.m in Sources */,
 				C9DFE10125CE713600831A34 /* ZHStudent+Study.m in Sources */,
 				C97D2AFD25CD1B070010F674 /* ZHPerson+Sport.m in Sources */,
+				C96BB20225D8ED9D00031137 /* SetNeedsLayoutTestViewController.m in Sources */,
+				C9DC1F5525DE4C1200126E02 /* BarrierNetViewController.m in Sources */,
 				C9DFE10425CE86FA00831A34 /* ZHDog.m in Sources */,
 				044C5F05253577350058FC6A /* PLMyPageRootView.m in Sources */,
 				044DC8A8253E80BA00EA1A35 /* PLAmendPassWordRootView.m in Sources */,
@@ -1086,6 +1135,7 @@
 				C9631EA125CA703500155572 /* Game.m in Sources */,
 				0453F3B5253D6E3300B32F46 /* PLUserInfoConstantKey.m in Sources */,
 				045A14A82537E66100504F25 /* PLLoginInputIdentityNumberTextField.m in Sources */,
+				C96BB20E25D90C6F00031137 /* KvcKvoDog.m in Sources */,
 				04D833D4253162E200FCD4D5 /* ViewController.m in Sources */,
 				045AECDC253973B400757813 /* NSNumber+JSTNumber.m in Sources */,
 				042B83B3253447020069A40A /* PLMessageViewController.m in Sources */,
@@ -1093,9 +1143,13 @@
 				04544A3A25369D12007F739F /* PLRoundedBoardView.m in Sources */,
 				C97D2B0325CD44B60010F674 /* UIControl+ZHRepeatClick.m in Sources */,
 				0421044025359876008AC002 /* PLMyPageSingleSelectionView.m in Sources */,
+				C96BB20825D908F500031137 /* KVCKVOViewController.m in Sources */,
+				C989209D25F5EA3C00C4F3FE /* NSString+ZHString.m in Sources */,
 				045A14AE2537F05E00504F25 /* PLLoginInputPasswordTextFieldView.m in Sources */,
 				0467B0BC253543780004ABBB /* UIViewExt.m in Sources */,
 				0453F3C1253D78C400B32F46 /* PLMyPageNetWork.m in Sources */,
+				C96BB20525D8F3C600031137 /* LaoutNeedTestView.m in Sources */,
+				C96BB20B25D90A8700031137 /* KvckvoPerson.m in Sources */,
 				04544A4F2536CBBD007F739F /* JSHeaderView.m in Sources */,
 				045A14BA253825A800504F25 /* PLRegisterViewController.m in Sources */,
 				04D833CE253162E200FCD4D5 /* AppDelegate.m in Sources */,

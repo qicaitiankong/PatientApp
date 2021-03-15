@@ -68,10 +68,9 @@
 //    NSLog(@"%@ %@ %@ %@ %@ %@",strArr[6],[arr2 objectAtIndex:1],arr2[7],[strArr objectAtIndex:5],arr3[6],[arr4 objectAtIndex:4]);
     //分类探讨
     //[ZHPerson class];
-    ZHPerson *person = [[ZHPerson alloc]init];
-    ZHStudent *student = [[ZHStudent alloc]init];
-    ZHDog *dog = [[ZHDog alloc]init];
-    
+    //ZHPerson *person = [[ZHPerson alloc]init];
+    //ZHStudent *student = [[ZHStudent alloc]init];
+    //ZHDog *dog = [[ZHDog alloc]init];
     
     
     

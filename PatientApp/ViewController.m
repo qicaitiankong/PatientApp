@@ -14,6 +14,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *str = @"";
     // Do any additional setup after loading the view.
 }
 

@@ -24,15 +24,29 @@ class SwiftVC: UIViewController,UITableViewDelegate,UITableViewDataSource
     var tableView: UITableView?
     lazy var modelArr: [ZhDetailModel] = []
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func viewDidLoad()
       {
           super.viewDidLoad()
           self.view.backgroundColor = UIColor.white
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableViews), name: NSNotification.Name("refreshTable"), object: MiddleDetailViewController.self)
           startWebListening()
           addTableView()
           self.tableView?.mj_header?.beginRefreshing()
                
       }
+    
+    @objc func reloadTableViews() {
+        
+        DispatchQueue.main.async {
+            self.tableView?.reloadData()
+
+        }
+    }
+    
     
     func addTableView() {
            self.tableView = UITableView(frame: CGRect(x: 0, y: GET_NAVGATION_HEIGHT(), width: SCREEN_WIDTH, height: IPHONE_VIEW_HEIGHT_ONLY_NAVIGATION), style: .plain)
@@ -53,6 +67,7 @@ class SwiftVC: UIViewController,UITableViewDelegate,UITableViewDataSource
        }
     
    @objc func startRefresh() {
+    print("刷新通知");
           pageNumber = 1
           isRefresh = true
           requestData(page: pageNumber)
@@ -110,7 +125,7 @@ class SwiftVC: UIViewController,UITableViewDelegate,UITableViewDataSource
           let detailVC = MiddleDetailViewController()
           //detailVC.myDelagate = self
           //将函数地址赋给闭包变量
-          detailVC.refreshPageListClosure = startRefresh
+          //detailVC.refreshPageListClosure = startRefresh
           
           detailVC.hidesBottomBarWhenPushed = true
           self.navigationController?.pushViewController(detailVC, animated: true)

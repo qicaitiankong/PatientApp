@@ -15,6 +15,10 @@
 #import "GCDTestViewController.h"
 #import "H5TestViewController.h"
 #import "LockTestViewController.h"
+#import "SetNeedsLayoutTestViewController.h"
+#import "KVCKVOViewController.h"
+#import "NSTimerViewController.h"
+
 
 const NSInteger singleViewHeight = 50;
 
@@ -119,6 +123,60 @@ const NSInteger singleViewHeight = 50;
                  make.height.mas_equalTo(singleViewHeight);
                  make.width.mas_equalTo(100);
              }];
+    UIButton *centenbutton8 = [UIButton buttonWithType:UIButtonTypeCustom];
+                centenbutton8.backgroundColor = UIColor.grayColor;
+                [centenbutton8 setTitle:@"setneedsLayout" forState:UIControlStateNormal];
+                [self.view addSubview:centenbutton8];
+                [centenbutton8 addTarget:self action:@selector(setNeedsTest) forControlEvents:UIControlEventTouchUpInside];
+                [centenbutton8 mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.left.mas_equalTo(20);
+                    make.top.mas_equalTo(centenbutton7.mas_bottom).mas_offset(10);
+                    make.height.mas_equalTo(singleViewHeight);
+                    make.width.mas_equalTo(160);
+                }];
+    UIButton *centenbutton9 = [UIButton buttonWithType:UIButtonTypeCustom];
+    centenbutton9.backgroundColor = UIColor.grayColor;
+    [centenbutton9 setTitle:@"kvc Kvo" forState:UIControlStateNormal];
+    [self.view addSubview:centenbutton9];
+    [centenbutton9 addTarget:self action:@selector(KVCkVOTest) forControlEvents:UIControlEventTouchUpInside];
+    [centenbutton9 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(20);
+        make.top.mas_equalTo(centenbutton8.mas_bottom).mas_offset(10);
+        make.height.mas_equalTo(singleViewHeight);
+        make.width.mas_equalTo(160);
+    }];
+    
+    UIButton *centenbutton10 = [UIButton buttonWithType:UIButtonTypeCustom];
+       centenbutton10.backgroundColor = UIColor.grayColor;
+       [centenbutton10 setTitle:@"NSTimer 定时器" forState:UIControlStateNormal];
+       [self.view addSubview:centenbutton10];
+       [centenbutton10 addTarget:self action:@selector(NStimerTest) forControlEvents:UIControlEventTouchUpInside];
+       [centenbutton10 mas_makeConstraints:^(MASConstraintMaker *make) {
+           make.right.mas_equalTo(self.view).mas_offset(-20);
+           make.top.mas_equalTo(centenbutton);
+           make.height.mas_equalTo(singleViewHeight);
+           make.width.mas_equalTo(160);
+       }];
+    
+    
+}
+
+- (void)NStimerTest{
+    NSTimerViewController *timeVC = [[NSTimerViewController alloc]init];
+    timeVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:timeVC animated:YES];
+}
+
+- (void)KVCkVOTest{
+    KVCKVOViewController *testVC = [[KVCKVOViewController alloc]init];
+    testVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:testVC animated:YES];
+}
+
+- (void)setNeedsTest{
+    SetNeedsLayoutTestViewController *testVC = [[SetNeedsLayoutTestViewController alloc]init];
+    testVC.hidesBottomBarWhenPushed = YES;
+     [self.navigationController pushViewController:testVC animated:YES];
 }
 
 - (void)lockTest{
@@ -161,9 +219,9 @@ const NSInteger singleViewHeight = 50;
 
 - (void)clickButton{
     NSLog(@"跳转swift");
-//    SwiftVC *vc = [[SwiftVC alloc]init];
-//    vc.hidesBottomBarWhenPushed = true;
-//    [self.navigationController pushViewController:vc animated:YES];
+    SwiftVC *vc = [[SwiftVC alloc]init];
+    vc.hidesBottomBarWhenPushed = true;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
