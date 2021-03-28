@@ -13,31 +13,31 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        CFRunLoopObserverRef observerRef = CFRunLoopObserverCreateWithHandler(CFAllocatorGetDefault(), kCFRunLoopAllActivities, YES, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
-                       switch (activity) {
-                       case kCFRunLoopEntry:
-                           NSLog(@"runloop启动");
-                           break;
-                       case kCFRunLoopBeforeTimers:
-                           NSLog(@"runloop即将处理timer事件");
-                           break;
-                       case kCFRunLoopBeforeSources:
-                           NSLog(@"runloop即将处理sources事件");
-                           break;
-                       case kCFRunLoopBeforeWaiting:
-                           NSLog(@"runloop即将进入休眠");
-                           break;
-                       case kCFRunLoopAfterWaiting:
-                           NSLog(@"runloop被唤醒");
-                           break;
-                       case kCFRunLoopExit:
-                           NSLog(@"runloop退出");
-                           break;
-                       default:
-                           break;
-                   }
-               });
-           CFRunLoopAddObserver(CFRunLoopGetCurrent(), observerRef, kCFRunLoopDefaultMode);
+//        CFRunLoopObserverRef observerRef = CFRunLoopObserverCreateWithHandler(CFAllocatorGetDefault(), kCFRunLoopAllActivities, YES, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
+//                       switch (activity) {
+//                       case kCFRunLoopEntry:
+//                           NSLog(@"runloop启动");
+//                           break;
+//                       case kCFRunLoopBeforeTimers:
+//                           NSLog(@"runloop即将处理timer事件");
+//                           break;
+//                       case kCFRunLoopBeforeSources:
+//                           NSLog(@"runloop即将处理sources事件");
+//                           break;
+//                       case kCFRunLoopBeforeWaiting:
+//                           NSLog(@"runloop即将进入休眠");
+//                           break;
+//                       case kCFRunLoopAfterWaiting:
+//                           NSLog(@"runloop被唤醒");
+//                           break;
+//                       case kCFRunLoopExit:
+//                           NSLog(@"runloop退出");
+//                           break;
+//                       default:
+//                           break;
+//                   }
+//               });
+//           CFRunLoopAddObserver(CFRunLoopGetCurrent(), observerRef, kCFRunLoopDefaultMode);
     }
     return self;
 }
@@ -62,7 +62,7 @@
         //[self layoutIfNeeded];
     }else{
         self.subLab.frame = CGRectMake(50, 0, 100, 40);
-       // [self setNeedsLayout];
+        [self setNeedsLayout];
         //[self layoutIfNeeded];
     }
     

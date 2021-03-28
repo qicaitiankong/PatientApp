@@ -25,7 +25,6 @@ class MiddleDetailViewController: UIViewController{
     var refreshPageListClosure: (() -> Void)?
     //也可以先起个类型别名，再定义
     //    typealias RefreshPageListClosure = () -> Void
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()

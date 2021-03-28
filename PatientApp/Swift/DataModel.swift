@@ -12,5 +12,5 @@ class DataModel: Codable
      var list:[MiddleListPageDataModel]?
      var pageSize: Int?
      var totalPage: Int?
-    
+     
 }

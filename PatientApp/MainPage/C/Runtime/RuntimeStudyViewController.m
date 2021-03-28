@@ -72,6 +72,8 @@
     //ZHStudent *student = [[ZHStudent alloc]init];
     //ZHDog *dog = [[ZHDog alloc]init];
     
+    ZHPerson *person = [[ZHPerson alloc]init];
+    [person test01];
     
     
 }

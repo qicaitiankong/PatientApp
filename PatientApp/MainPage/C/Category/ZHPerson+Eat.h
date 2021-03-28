@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)eat;
 
+- (void)test01;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

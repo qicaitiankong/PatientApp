@@ -9,6 +9,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
+
 struct ListDataRequestParam: Encodable{
     let userId:Int
     let page: Int
@@ -36,7 +37,7 @@ class SwiftVC: UIViewController,UITableViewDelegate,UITableViewDataSource
           startWebListening()
           addTableView()
           self.tableView?.mj_header?.beginRefreshing()
-               
+        //MiddleDetailViewController.test2()
       }
     
     @objc func reloadTableViews() {

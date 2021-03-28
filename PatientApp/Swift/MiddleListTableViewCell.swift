@@ -104,10 +104,11 @@ class MiddleListTableViewCell: UITableViewCell {
         self.incomeLabe?.mas_makeConstraints({ (make) in
             make?.left.mas_equalTo()(self.nickNameLab?.mas_right)?.offset()(15)
             make?.right.mas_equalTo()(self.topTitleLabe?.mas_right)
-
             make?.top.mas_equalTo()(self.nickNameLab)
             make?.height.mas_equalTo()(self.nickNameLab)
         })
+        
+        
         
     }
     

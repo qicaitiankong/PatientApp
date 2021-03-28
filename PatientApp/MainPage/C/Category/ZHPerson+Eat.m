@@ -36,4 +36,8 @@
      NSLog(@"ZHPerson+Eat.h +(void)life");
 }
 
+- (void)test01{
+    NSLog(@"Person+Eat test01方法");
+}
+
 @end

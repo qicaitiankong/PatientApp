@@ -67,7 +67,9 @@
     NSLog(@"ZHPerson (Sport)  + (void)life");
 }
 
-
+- (void)test01{
+    NSLog(@"Person+Sport test01方法");
+}
 
 @end
 

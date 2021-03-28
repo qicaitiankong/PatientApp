@@ -30,6 +30,8 @@ typedef int(^myBlock)(int, NSString*);
     static NSString *name = @"lzh";
     void(^ myBlock100)(void) = ^{
         NSLog(@"%@",name); //sdp
+       // name = @"ghhg";
+        
     };
     name = @"sdp";
     myBlock100();
